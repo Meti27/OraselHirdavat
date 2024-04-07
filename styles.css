@@ -1,0 +1,508 @@
+.door {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #fff; /* Changed to white */
+  z-index: 1001;
+  will-change: transform;
+}
+
+.door-left {
+  left: 0;
+  transform: translateX(0%);
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 0.5s; /* Delay to ensure the page is loaded before doors start to open */
+}
+
+.door-right {
+  right: 0;
+  transform: translateX(0%);
+  animation: slideRight 1s ease forwards;
+  animation-delay: 0.5s; /* Same delay as the left door */
+}
+
+@keyframes slideLeft {
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes slideRight {
+  to {
+      transform: translateX(100%);
+  }
+}
+
+/* Remove overflow hidden from body after animation */
+body.animated {
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+h2{
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+a {
+  position: relative;
+  text-decoration: none; /* Removes the default underline */
+  color: #000; /* Set the text color */
+  transition: color 0.3s ease; /* Smooth transition for the text color */
+}
+
+a:hover {
+  color: rgb(24, 24, 22); /* Changes text color to yellow on hover */
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  bottom: -5px; /* Distance of the underline from the text */
+  left: 0;
+  background-color: rgb(74, 74, 73); /* Initial color of the underline */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::after {
+  visibility: visible;
+  transform: scaleX(1); /* Scale the underline to full width */
+}
+
+
+.backroundimg{
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  object-fit: contain;
+}
+.backroundimg img{
+  height: 100%;
+}
+.image1{
+  width: 100%;
+  height: 80vh;
+  width: 100%;
+  height: 100%;
+  opacity: 80%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2{
+  width: 30vw;
+  height: 30vh;
+  position: absolute;
+  bottom: 5vh;
+  right: 2vw;
+  mix-blend-mode: color-burn;
+}
+.image2 p{
+  font-size: 1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.home-banner{
+  width: 100%;
+  height: 30vh;
+  object-fit: contain;
+  background-color: rgb(35, 35, 35);
+}
+.home-banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.sponsor-image {
+  display: flex;
+  flex-direction: row;
+  width: 18vw; /* Image width */
+  height: 10vh; /* Image height */
+  object-fit: contain;
+  margin-bottom: 0%;
+}
+.sponsor-image img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.mySlides1 {display: none;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  object-fit: contain;}
+.mySlides1 img{
+  height: 100%;
+  width: 100%;
+}
+img {vertical-align: middle;}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.slide {
+  flex-shrink: 0;
+  width: 100%; /* Ensure each slide spans the entire width of the container */
+}
+
+.slideshow-container {
+  display: flex;
+  overflow-x: hidden;
+  width: 50vw; /* Adjust based on actual total width including margins */
+}
+
+.slide .sponsor-image:last-child {
+  margin-right: 0; /* Remove margin for the last image in each slide */
+}
+.product-backround{
+  background-color: rgb(211, 211, 211);
+  
+}
+.titleforproducts{
+  font: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 25vw;
+  margin-left: 25vw;
+  margin-bottom: 3vw;
+  
+}
+.span1{
+  color: rgb(219, 103, 36);
+}
+.h3product{
+  padding-top: 1.5vw;
+  padding-bottom: 2vw;
+}
+
+.our-experiences{
+  display: flex;
+  justify-content: flex-start;
+}
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.title{
+  margin-right: 10vw;
+}
+.nav{
+  margin-left: 10vw;
+}
+.experiences {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+padding: 1.04vw;
+margin-left: 10vw;
+}
+.institutional{
+  width: 40vw;
+}
+.button{
+  background-color: rgb(204, 151, 54);
+}
+.our-experiences, .customer-experiences {
+  background-color: #f2f0f08f; /* Light gray background */
+  margin: 0.5vw 0;
+}
+
+.institutional h5, .institutional h3 {
+  margin: 0 0 0.5vw 0;
+}
+
+.institutional p {
+  margin: 0 0 1.04vw 0;
+}
+.our {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Adjust the gap between items */
+}
+
+.institutional1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 10vw;
+  gap: 0.5vw; /* Adjust the gap between the number, line, and arrow */
+  width: 15vw;
+  height: 7.5vh;
+  justify-content: space-evenly; /* Even spacing around items */
+}
+
+.institutional1 h1 {
+  font-size: 2em; /* Adjust the size of the number */
+  font-weight: 600;
+  color: rgba(120, 119, 119,50);
+  margin: 0; /* Remove default argin */
+}
+
+.institutional1 hr {
+  width: 50%; /* Adjust the width of the line */
+  border: 1px solid black; /* Adjust the color and thickness of the line */
+  margin: 0 5px; /* Adjust spacing around the line */
+}
+
+.institutional1 span {
+  font-size: 2em; /* Adjust the size of the arrow */
+  display: flex;
+  align-items: center; /* Center the arrow vertically */
+}
+.count{
+  font-size: 3vw;
+  color: orange;
+}
+.text{
+  padding-left: 2vw;
+  padding-top: -1vw;
+  font-size: 0.5vw;
+}
+.counter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 3vw;
+}
+.counter1{
+  text-align: center;
+  flex-direction: column;
+  width: 15vw;
+  height: 15vh;
+  padding-bottom: 5vw;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.contactfix{
+  display: flex;
+  flex-direction: row;
+  padding-top: 4vw;
+  justify-content: space-evenly;
+  background-color: rgba(71, 71, 68, 0.2);
+}
+.Contact{
+  display: flex;
+  flex-direction: column;
+}
+.About{
+  font-size: 1.7vw;
+  width: 30vw;
+  border-left: 0.2vw solid orange;
+  padding-left: 1vw;
+}
+.About1{
+width: 20vw;
+font-size: 1vw;
+padding-left: 1vw;
+padding-bottom: 2vw;
+}
+.number{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.number1{
+
+  justify-content: center;
+}
+.number1 img{
+  width: 5vw;
+  height: 5vh;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-blue-500 {
+  background-color: #3498db; /* Blue */
+}
+
+.bg-blue-700:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.text-white {
+  color: #fff;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.border {
+  border: 1px solid transparent;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.end{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 3vw;
+}
+.firstrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.secondrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.thirdrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fourthrow{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo{
+  width: 15vw;
+  height: 15vh;
+  mix-blend-mode: multiply;
+  object-fit: contain;
+}.logo img{
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experiences {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4vh;
+  }
+  .institutional p,h3,h5{
+    margin-left: 5vw;
+  }
+  .our-experiences, .customer-experiences {
+    width: 80%; /* Adjust based on preference */
+    align-items: center;
+    margin-left: 5vw;
+
+  }
+  .our{
+    margin-bottom: 15vw;
+  }
+  
+  .institutional1{
+    flex-direction: row;
+  }
+  .institutional1 hr {
+    width: 90%; /* Adjust the width of the line */
+    border: 1px solid black; /* Adjust the color and thickness of the line */
+    margin: 0 5px; /* Adjust spacing around the line */
+  }
+
+  .contactfix{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .number1{
+    margin-left: 30vw;
+  }
+  .Contact{
+    align-items: center;
+  }
+  .number{
+    width: 80vw;
+  }
+  .callbutton{
+    margin-left: 20vw;
+    width: 50vw;
+  }
+  .end{
+    flex-direction: column;
+    margin-left: 2vw;
+  }
+  .logo{
+    width: 25vw;
+    height: 20vh;
+  }
+}
+/* Base adjustments for responsiveness */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Enhancements for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+  }
+}
