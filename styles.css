@@ -81,7 +81,7 @@ a:hover::after {
 
 .backroundimg{
   width: 100%;
-  height: 80vh;
+  height: 100%;
   position: relative;
   top: 0px;
   left: 0px;
@@ -194,7 +194,7 @@ img {vertical-align: middle;}
   
 }
 .span1{
-  color: rgb(219, 103, 36);
+  color: rgb(134, 137, 148);
 }
 .h3product{
   padding-top: 1.5vw;
@@ -233,7 +233,7 @@ margin-left: 10vw;
   width: 40vw;
 }
 .button{
-  background-color: rgb(204, 151, 54);
+  background-color: rgb(159, 160, 165);
 }
 .our-experiences, .customer-experiences {
   background-color: #f2f0f08f; /* Light gray background */
@@ -285,7 +285,7 @@ margin-left: 10vw;
 }
 .count{
   font-size: 3vw;
-  color: orange;
+  color: rgb(159, 163, 183);
 }
 .text{
   padding-left: 2vw;
@@ -322,7 +322,7 @@ margin-left: 10vw;
 .About{
   font-size: 1.7vw;
   width: 30vw;
-  border-left: 0.2vw solid orange;
+  border-left: 0.2vw solid rgb(177, 183, 199);
   padding-left: 1vw;
 }
 .About1{
@@ -426,6 +426,10 @@ padding-bottom: 2vw;
   }
   .institutional p,h3,h5{
     margin-left: 5vw;
+    text-align: center;
+  }
+  .institutional{
+    width: 90vw;
   }
   .our-experiences, .customer-experiences {
     width: 80%; /* Adjust based on preference */
@@ -434,24 +438,30 @@ padding-bottom: 2vw;
 
   }
   .our{
-    margin-bottom: 15vw;
-  }
-  
-  .institutional1{
-    flex-direction: row;
-  }
-  .institutional1 hr {
-    width: 90%; /* Adjust the width of the line */
-    border: 1px solid black; /* Adjust the color and thickness of the line */
-    margin: 0 5px; /* Adjust spacing around the line */
+    display:none;
+
   }
 
   .contactfix{
     flex-direction: column;
     justify-content: center;
   }
+  .Contact{
+    width: 80vw;
+  }
+  .Contact p{
+    font-size: 2.5vw;
+  }
+  .About, .About1{
+    width: 50vw;
+  }
+  .callbutton1{
+    width: 25vw;
+    height: 5vh;
+    margin-left: 20%;
+  }
   .number1{
-    margin-left: 30vw;
+    margin-left: 17vw;
   }
   .Contact{
     align-items: center;
@@ -465,11 +475,14 @@ padding-bottom: 2vw;
   }
   .end{
     flex-direction: column;
-    margin-left: 2vw;
+    margin-left: 3vw;
   }
   .logo{
-    width: 25vw;
+    width: 40vw;
     height: 20vh;
+  }
+  h2{
+    font-size: 4vw;
   }
 }
 /* Base adjustments for responsiveness */
