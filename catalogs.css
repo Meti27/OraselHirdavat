@@ -73,15 +73,17 @@ body.animated {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.grid{
+.gridcatalog{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 }
-.flex{
+.flexcatalog{
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+  margin-top: 2vh;
 }
 .contactfix{
   margin-top: 2vh;

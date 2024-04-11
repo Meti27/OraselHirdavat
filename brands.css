@@ -116,16 +116,22 @@
   }
   .gridbrand{
     margin-top: 5vw;
+    margin-bottom: 3vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     flex-direction: column;
   }
   .flexbrand{
     display: flex;
     flex-direction: row;
-    margin-top: 0vh;
+justify-content: space-evenly;
+    margin-top: 2vh;
   }
+
   .pdf{
-    border: #000 solid;
+    width: 20vw;
+    height: auto;
+    text-align: center;
   }
+ 
   
