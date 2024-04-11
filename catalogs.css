@@ -55,20 +55,24 @@ body.animated {
   height: 100%;
   object-fit:cover;
 }
-.text{
+.textcatalog{
   position: absolute;
-  color: #1E578E;
-  font-size: 3vw;
-  font-weight: 700;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    color:  #2980b9;
+    font-size: 3rem;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 3px rgba(44, 44, 44, 0.5);
 }
-.text1{
+.text1catalog{
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 3px rgba(44, 44, 44, 0.5);
+  font-size: 1rem;
+  margin-top: 10px;
   position: absolute;
-  color: rgb(255, 255, 255);
-  font-size: 2cqmax;
-  font-weight: 700;
+  font-weight: 500;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);

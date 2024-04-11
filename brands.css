@@ -98,23 +98,28 @@
   }
   .textbrand{
     position: absolute;
-    color:  rgb(71, 71, 68,);
-    font-size: 3vw;
+    color:  #2980b9;
+    font-size: 3rem;
     font-weight: 700;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 3px rgba(44, 44, 44, 0.5);
   }
   .text1brand{
+    color: #ffffff;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 3px rgba(44, 44, 44, 0.5);
+    font-size: 1rem;
+    margin-top: 10px;
     position: absolute;
-    color: rgb(177, 183, 199);
-    font-size: 2cqmax;
-    font-weight: 700;
+    font-weight: 500;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .gridbrand{
+    
     margin-top: 5vw;
     margin-bottom: 3vh;
     display: flex;
@@ -126,6 +131,7 @@
     flex-direction: row;
 justify-content: space-evenly;
     margin-top: 2vh;
+    margin: 2vw;
   }
 
   .pdf{
