@@ -194,7 +194,8 @@ img {vertical-align: middle;}
   
 }
 .span1{
-  color: rgb(134, 137, 148);
+  color: #2980b9;
+  font-weight: 600;
 }
 .h3product{
   padding-top: 1.5vw;
@@ -311,9 +312,11 @@ margin-left: 10vw;
 .contactfix{
   display: flex;
   flex-direction: row;
-  padding-top: 4vw;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
   justify-content: space-evenly;
-  background-color: rgba(71, 71, 68, 0.2);
+  background-color: #90c3ea;
+  background-image: url("images/bottom-image.png");
 }
 .Contact{
   display: flex;
@@ -322,14 +325,17 @@ margin-left: 10vw;
 .About{
   font-size: 1.7vw;
   width: 30vw;
-  border-left: 0.2vw solid rgb(177, 183, 199);
+  border-left: 0.2vw solid #3498db;
+  color: black;
   padding-left: 1vw;
 }
 .About1{
-width: 20vw;
-font-size: 1vw;
-padding-left: 1vw;
-padding-bottom: 2vw;
+  width: 20vw;
+  font-size: 1vw;
+  padding-left: 1vw;
+  padding-bottom: 2vw;
+  padding-top: 2vh;
+  color: #000000;
 }
 .number{
   display: flex;
@@ -337,7 +343,7 @@ padding-bottom: 2vw;
   flex-direction: column;
 }
 .number1{
-
+  color: #000000;
   justify-content: center;
 }
 .number1 img{
@@ -924,7 +930,6 @@ textarea{
   height: 23vh;
   background-color: #3498db;
   display: flex;
-  margin-bottom: 10vh;
   justify-content: center;
   align-items: center;
 }
