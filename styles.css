@@ -521,7 +521,7 @@ img, video {
   width: 100vw;
   text-align: center;
   padding: 12vh;
-  background-image: url("contact-us-scaled-1.jpg");
+  background-image: url("/images/contact-us-scaled-1.jpg");
   background-size: cover;
   background-clip: border-box;
 }
@@ -704,7 +704,7 @@ textarea{
 .about-banner{
   padding: 70px;
   text-align: center;
-  background: url("chess-background.webp");
+  background: url("images/chess-background.webp");
   background-position: 10px 1000px;
   backdrop-filter: blur(5px);
 }
@@ -858,7 +858,7 @@ textarea{
   justify-content: center;
   height: 50vh;
   width: 100%;
-  background-image: url("aboutbannerbtm.jpg");
+  background-image: url("images/aboutbannerbtm.jpg");
   background-position:  300px;
   background-size: contain;
 }
