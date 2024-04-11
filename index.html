@@ -211,24 +211,40 @@
     </div>
 </div>
 </div>
-<div class="counter">
-    <div class="counter1"><h4>Globally</h4>
-        <h1 class="count" class="number-animate" data-target="20">0+</h1>
-        <h4><span class="span1">Brand</span></h4>
+    <div class="about-btm-banner">
+        <div class="btm-banner-container">
+
+            <div>
+                <h2>Globally</h2>
+                <h1><span class="num" data-val="20">00</span>+</h1>
+                <p>BRAND</p>
+            </div>
+
+            <div>
+                <h2>Specific To Your Industry</h2>
+                <h1> <span class="num" data-val="10000">0000</span>+</h1>
+                <p>PRODUCT</p>
+            </div>
+
+            <div>
+                <h2>In the Industry</h2>
+                <h1><span class="num" data-val="40">00</span>+</h1>
+                <p>EXPERIENCE</p>
+            </div>
+
+            <div>
+                <h2>Supplied</h2>
+                <h1><span class="num" data-val="2000">0000</span>+</h1>
+                <p>CUSTOMER</p>
+            </div>
+
+        </div>
+        <div class="btm-banner-bottom">
+
+        </div>
+
+
     </div>
-    <div class="counter1"><h4>Specific to your industry</h4>
-        <h1 class="count" class="number-animate" data-target="10000">0+</h1>
-        <h4><span class="span1">Product</span></h4>
-    </div>
-    <div class="counter1"><h4>In the industry</h4>
-        <h1 class="count" class="number-animate" data-target="40">0+</h1>
-        <h4><span class="span1">Experience</span></h4>
-    </div>
-    <div class="counter1"><h4>Supplied</h4>
-        <h1 class="count" class="number-animate" data-target="2000">0</h1>
-        <h4><span class="span1">Costumer</span></h4>
-    </div>
-</div>
     <div class="contactfix">
     <div class="Contact">
         <div class="About"><p>A knowledge that has been handed down from <span class="span1">generation to generation</span> with the same care for <span class="span1">40 years</span>.</p></div>
@@ -298,6 +314,54 @@
       </div>
   </div>
 </div>
+
+
+
+    <script>
+        function startCountersWhenInView(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+
+                    let valueDisplays = document.querySelectorAll('.num');
+                    let interval = 1500;
+
+                    valueDisplays.forEach((valueDisplay) => {
+                        let startValue = 0;
+
+                        if (valueDisplay.getAttribute("data-val") == 2000) {
+                            startValue = 1700;
+                        }
+                        if (valueDisplay.getAttribute("data-val") == 10000) {
+                            startValue = 9700;
+                        }
+
+                        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                        let duration = Math.floor(interval / endValue);
+                        let counter = setInterval(function() {
+                            startValue += 1;
+                            valueDisplay.textContent = startValue;
+                            if (startValue == endValue) {
+                                clearInterval(counter);
+                            }
+                        }, duration);
+
+                        observer.unobserve(entry.target);
+                    });
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(startCountersWhenInView, {
+            threshold: 0.8
+        });
+
+        const targetElement = document.querySelector('.about-btm-banner');
+
+        if (targetElement) {
+            observer.observe(targetElement);
+        }
+
+    </script>
 
     <script>
 
