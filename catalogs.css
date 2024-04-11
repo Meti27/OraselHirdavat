@@ -82,7 +82,6 @@ body.animated {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  margin-top: 2vh;
 }
 .contactfix{
   margin-top: 2vh;
