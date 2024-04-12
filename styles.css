@@ -493,7 +493,6 @@ body {
   }
   .end{
     flex-direction: column;
-    margin-left: 3vw;
   }
   .logo{
     width: 40vw;
