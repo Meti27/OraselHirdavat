@@ -10,6 +10,32 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+  <style>
+    .captcha-container{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding:2vh;
+    }
+    #sendBtn{
+      margin-left: 2vh;
+    }
+
+    @media (max-width: 1000px){
+      .captcha-container{
+        padding: 0 !important;
+        justify-content: center !important;
+        padding: 1vh;
+        margin-top: 2vh;
+      }
+      #sendBtn{
+        margin-top: 4vh;
+      }
+    .captcha-contact{
+      scale: 2;
+    }
+    }
+  </style>
 </head>
 <body class="font-sans">
 <div class="door-container">
@@ -105,10 +131,10 @@
       <h1>Orasel Hirdavat</h1>
 
       <div>
-        <a href="tel:" id="phoneNo"> <strong>Phone:</strong> +389000000</a>
+        <a href="tel:" id="phoneNo"> <strong>Phone:</strong> +389 72 226 866</a>
       </div>
       <div>
-        <a href="mailto:" id="email"><strong>E-Mail:</strong> johndoe@example.com</a>
+        <a href="mailto:" id="email"><strong>E-Mail:</strong> info@oraselmakedonya.com</a>
       </div>
 
         <p>You can send us all your questions, requests, opinions and complaints by filling out the form on the side. You will be informed as soon as possible.</p>
@@ -116,10 +142,13 @@
 
     </div>
 
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
   <div class="right-form">
-    <form method="POST" action="https://formsubmit.co/e085167082eaee861cd3cd263c544772">
+    <form method="POST" action="https://api.web3forms.com/submit">
 
       <div id="name-inputs">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
         <input type="text" name="Name" id="full-name" placeholder="Full Name*" required>
         <input type="email" name="E-Mail" id="e-mail" placeholder="E-Mail*" required>
       </div>
@@ -130,6 +159,7 @@
           <textarea name="Message" placeholder=" Type your message here*" required></textarea>
       </div>
         <div>
+         <div class="captcha-container"> <div class="h-captcha captcha-contact" data-captcha="true"></div></div>
         <input type="submit" value="Send" id="sendBtn">
       </div>
 
