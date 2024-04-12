@@ -1086,6 +1086,7 @@ textarea{
   }
   #mob-nav{
     display: block;
+    margin-top: -1.2vh;
   }
 
   /* ABOUT PAGE */
