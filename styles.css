@@ -206,11 +206,14 @@ img {vertical-align: middle;}
   color: #82878d;
   letter-spacing: 3px;
   padding-bottom: 2vw;
+  text-align: center;
 }
 
 .our-experiences{
+  height: 40vh;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 /* Basic Reset */
 * {
@@ -232,23 +235,26 @@ body {
 .experiences {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-padding: 1.04vw;
-margin-left: 10vw;
+  justify-content: space-around;
+  padding: 10vh;
+  margin-left: 10vw;
+  height: 60vh;
 }
 .institutional{
   width: 40vw;
+  align-items: center;
+  padding: 10vh;
 }
 .button{
   background-color: rgb(159, 160, 165);
 }
 .our-experiences, .customer-experiences {
-  background-color: #f2f0f08f; /* Light gray background */
   margin: 0.5vw 0;
 }
 
-.institutional h5, .institutional h3 {
-  margin: 0 0 0.5vw 0;
+.institutional h2{
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .institutional p {
@@ -258,6 +264,7 @@ margin-left: 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   /* Adjust the gap between items */
 }
 
@@ -267,13 +274,13 @@ margin-left: 10vw;
   flex-wrap: wrap;
   margin-right: 10vw;
   gap: 0.5vw; /* Adjust the gap between the number, line, and arrow */
-  width: 15vw;
+  width: 20vw;
   height: 7.5vh;
   justify-content: space-evenly; /* Even spacing around items */
 }
 
 .institutional1 h1 {
-  font-size: 2em; /* Adjust the size of the number */
+  font-size: 1.2em; /* Adjust the size of the number */
   font-weight: 600;
   color: rgba(120, 119, 119,50);
   margin: 0; /* Remove default argin */
@@ -295,9 +302,10 @@ margin-left: 10vw;
   color: rgb(159, 163, 183);
 }
 .text{
+  text-align: left;
   padding-left: 2vw;
-  padding-top: -1vw;
-  font-size: 0.5vw;
+  margin-top: -2vh;
+  font-size: 0.6rem;
 }
 .counter{
   display: flex;
@@ -432,9 +440,7 @@ margin-left: 10vw;
 /* Responsive Design */
 @media (max-width: 1000px) {
   .experiences {
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 4vh;
+    display: none;
   }
   .institutional p,h3,h5{
     margin-left: 5vw;
@@ -1325,5 +1331,26 @@ textarea{
   #location-iframe-mob{
     display: block;
   }
+
+
+  /* FOOTER */
+
+  .firstrow .logo{
+    width: 100vw;
+    height: auto;
+  }
+  .firstrow{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .secondrow h2,.thirdrow h2,.fourthrow h2{
+    font-size: 3rem;
+    padding-left:0vw;
+  }
+  .secondrow a,.thirdrow a,.fourthrow a{
+    font-size: 2rem;
+    padding-left:2vw;
+  }
+
 
 }
