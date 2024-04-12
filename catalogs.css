@@ -57,13 +57,13 @@ body.animated {
 }
 .textcatalog{
   position: absolute;
-    color:  #2980b9;
+    color: #3498db;
     font-size: 3rem;
     font-weight: 700;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 3px 3px 3px rgba(44, 44, 44, 0.5);
+   text-shadow: 3px 3px 3px rgba(253, 253, 253, 0.54);
 }
 .text1catalog{
   color: #ffffff;

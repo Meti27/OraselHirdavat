@@ -6,10 +6,17 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        @screen (max-width:1000px){
+            .about-card button{
+                transform: translateY(0px) !important;
+            }
+        }
+    </style>
 </head>
 <body class="font-sans">
     <div class="door-container">
@@ -103,22 +110,22 @@
     <!-- Hero Section -->
     <div class="backroundimg">
         <div class="slideshow-container1">
-            <div class="mySlides1 fade">
-                <div class="image1"><img src="images/WhatsApp Image 2024-03-27 at 12.57.03.jpeg"></div> 
+            <div class="mySlides1 fade" style="height: 100vh">
+                <div class="image1"><img src="images/WhatsApp Image 2024-03-27 at 12.57.03.jpeg" ></div>
                </div>
-            <div class="mySlides1 fade">
+            <div class="mySlides1 fade"  style="height: 100vh">
               <img src="images/backround1.jpg">
               
             </div>
           
-            <div class="mySlides1 fade">
+            <div class="mySlides1 fade"  style="height: 100vh">
               <img src="images/backround2.jpg" >
               
             </div>
           </div>
       
     </div>
-    <div class="slideshow-container relative mx-auto max-w-6xl overflow-hidden bg-white rounded-lg">
+    <div class="slideshow-container relative mx-auto max-w-6xl overflow-hidden bg-white rounded-lg" style="padding: 5vh">
       <div class="slide flex">
           <img src="images/ansel.png" class="sponsor-image" id="1">
           <img src="images/Bally.png" class="sponsor-image" id="2">
@@ -132,30 +139,42 @@
       </div>
       <!-- Add more slides as needed -->
   </div>
-  <h3 class="h3product text-center font-bold text-2xl">Our Products</h3>
-  <h1 class="titleforproducts text-center font-bold text-4xl" ><span class="span1">High Quality</span> products specific to your industry and proffesional use</h1>
-  <div class="products-grid">
-    <!-- Placeholder Box 1 -->
-    <div class="product-box">
-        <img src="images/power tool.png" alt="Placeholder Image">
-        <h2>Power Tools</h2>
-        <p>Please click to get information and review about our power tools products.</p>
-        <button>Read More</button>
-    </div>
-    <div class="product-box">
-        <img src="images/chemicals.png" alt="Placeholder Image">
-        <h2>Construction Chemicals and Industrial Adhesives</h2>
-        <p>Please click to get information and review about our chemical products used in buildings.</p>
-        <button>Read More</button>
-    </div>
-    <div class="product-box">
-        <img src="images/hose and clamps.png" alt="Placeholder Image">
-        <h2>Hose and Clamps</h2>
-        <p>Please click to get information and review about our wide variety of hose products.</p>
-        <button>Read More</button>
-    </div>
-</div>
-</div>
+  <section class="product-backround">
+    <h3 class=" h3product text-center font-bold text-2xl">Our Products</h3>
+    <h1 class=" titleforproducts text-center font-bold text-4xl"><span class="span1">High quality</span> products specific to your industry and professional use</h1>
+    <!-- Products/Services Showcase -->
+
+      <div class="about-cards-container" style="background-color: white ">
+
+          <div class="about-card" style="padding-bottom: 40vh">
+              <div class="card-content">
+                  <img src="images/power%20tool-blue.png" alt="">
+                  <h1 style="font-size: 1.3rem">Power Tools</h1>
+                  <p>Please click to get information about and review our power tools products.</p>
+              </div>
+              <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+          </div>
+
+
+          <div class="about-card" style="padding-bottom: 42vh">
+              <img src="images/chemicals-blue.png" alt="">
+              <h1 style="font-size: 1.3rem">Chemicals & Industrial Adhesives</h1>
+              <p>Please click to get information about our chemical products used in buildings.</p>
+              <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+          </div>
+
+
+          <div class="about-card" style="padding-bottom: 40vh">
+              <img src="images/hose%20and%20clamps-blue.png" alt="">
+              <h1 style="font-size: 1.3rem">Hose and Clamps</h1>
+              <p>Please click to get information about and review our wide range of hose products.</p>
+              <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+          </div>
+
+      </div>
+  </div>
+  <h3 class="h3product span1 text-center font-bold text-2xl"><a href=""> ALL OUR PRODUCT GROUPS</a></h3>
+</section>
 <div class="home-banner">
 <img src="images/WhatsApp Image 2024-03-27 at 12.57.03.jpeg" alt=""></div>
 <hr>
