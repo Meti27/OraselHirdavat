@@ -10,6 +10,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <style>
+        @screen (max-width:1000px){
+            .about-card button{
+                transform: translateY(0px) !important;
+            }
+        }
+    </style>
 </head>
 <body class="font-sans">
     <div class="door-container">
@@ -103,22 +110,22 @@
     <!-- Hero Section -->
     <div class="backroundimg">
         <div class="slideshow-container1">
-            <div class="mySlides1 fade">
-                <div class="image1"><img src="images/WhatsApp Image 2024-03-27 at 12.57.03.jpeg"></div> 
+            <div class="mySlides1 fade" style="height: 100vh">
+                <div class="image1"><img src="images/WhatsApp Image 2024-03-27 at 12.57.03.jpeg" ></div>
                </div>
-            <div class="mySlides1 fade">
+            <div class="mySlides1 fade"  style="height: 100vh">
               <img src="images/backround1.jpg">
               
             </div>
           
-            <div class="mySlides1 fade">
+            <div class="mySlides1 fade"  style="height: 100vh">
               <img src="images/backround2.jpg" >
               
             </div>
           </div>
       
     </div>
-    <div class="slideshow-container relative mx-auto max-w-6xl overflow-hidden bg-white rounded-lg" style="height: 20vh">
+    <div class="slideshow-container relative mx-auto max-w-6xl overflow-hidden bg-white rounded-lg" style="padding: 5vh">
       <div class="slide flex">
           <img src="images/ansel.png" class="sponsor-image" id="1">
           <img src="images/Bally.png" class="sponsor-image" id="2">
@@ -136,46 +143,35 @@
     <h3 class=" h3product text-center font-bold text-2xl">Our Products</h3>
     <h1 class=" titleforproducts text-center font-bold text-4xl"><span class="span1">High quality</span> products specific to your industry and professional use</h1>
     <!-- Products/Services Showcase -->
-    <div class="container mx-auto my-12 ">
-        <div class="grid md:grid-cols-3 gap-8 background-color:rgb(150, 146, 146);">
-            <!-- Single Item -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-                <div class="flex justify-center">
-                    <img src="images/power tool.png" alt="" class="rounded-md">
-                </div>
-                <h2 class="text-2xl font-semibold mt-4 text-center">Power Tools</h2>
-                <p class="text-gray-600 mt-2 text-center">Please click to get information about and review our power tools products.</p>
-                <div class="flex justify-center mt-4">
-                    <a href="#" class="button text-white px-4 py-2 border rounded-md hover:bg-orange-700 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">See More</a>
 
-                </div>
-                 <!-- Add inside the product div -->
-            </div>
-            <div class="bg-white shadow-lg rounded-lg p-6">
-              <div class="flex justify-center">
-                  <img src="images/chemicals.png" alt="" class="rounded-md">
+      <div class="about-cards-container" style="background-color: white ">
+
+          <div class="about-card" style="padding-bottom: 40vh">
+              <div class="card-content">
+                  <img src="images/power%20tool-blue.png" alt="">
+                  <h1 style="font-size: 1.3rem">Power Tools</h1>
+                  <p>Please click to get information about and review our power tools products.</p>
               </div>
-              <h2 class="text-2xl font-semibold mt-4 text-center">Construction Chemicals and Industrial Adhesives</h2>
-              <p class="text-gray-600 mt-2 text-center">Please click to get information about and review our chemical products used in buildings.</p>
-              <div class="flex justify-center mt-4">
-                <a href="#" class="button text-white px-4 py-2 border rounded-md hover:bg-orange-700 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">See More</a>
-              </div>
-               <!-- Add inside the product div -->
+              <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
           </div>
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <div class="flex justify-center">
-                <img src="images/hose and clamps.png" alt="" class="rounded-md">
-            </div>
-            <h2 class="text-2xl font-semibold mt-4 text-center">Hose and Clamps</h2>
-            <p class="text-gray-600 mt-2 text-center">Please click to get information about and review our wide range of hose products.</p>
-            <div class="flex justify-center mt-4">
-                <a href="#" class="button text-white px-4 py-2 border rounded-md hover:bg-orange-700 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">See More</a>
-            </div>
-             <!-- Add inside the product div -->
-        </div>
-            <!-- Repeat for other items -->
-        </div>
-    </div>
+
+
+          <div class="about-card" style="padding-bottom: 42vh">
+              <img src="images/chemicals-blue.png" alt="">
+              <h1 style="font-size: 1.3rem">Chemicals & Industrial Adhesives</h1>
+              <p>Please click to get information about our chemical products used in buildings.</p>
+              <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+          </div>
+
+
+          <div class="about-card" style="padding-bottom: 40vh">
+              <img src="images/hose%20and%20clamps-blue.png" alt="">
+              <h1 style="font-size: 1.3rem">Hose and Clamps</h1>
+              <p>Please click to get information about and review our wide range of hose products.</p>
+              <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+          </div>
+
+      </div>
   </div>
   <h3 class="h3product span1 text-center font-bold text-2xl"><a href=""> ALL OUR PRODUCT GROUPS</a></h3>
 </section>
