@@ -195,8 +195,9 @@ img {vertical-align: middle;}
 .titleforproducts{
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
-  margin-right: 25vw;
-  margin-left: 25vw;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
   margin-bottom: 3vw;
   font-size: 3rem;
   line-height: 6vh;
@@ -212,6 +213,7 @@ img {vertical-align: middle;}
   color: #82878d;
   letter-spacing: 3px;
   padding-bottom: 2vw;
+  font-weight: 800;
   text-align: center;
 }
 
@@ -303,7 +305,7 @@ width: 7vw;
 @media (max-width: 1000px) {
   .titleforproducts{
    width:60vw;
-  height: 10vh;
+   height: 10vh;
   }
   .product-box img {
    width: 20vw;
