@@ -47,18 +47,22 @@ a {
   }
   .text{
     position: absolute;
-    color: (71, 71, 68, 0.2);
-    font-size: 3vw;
+    color: #3498db;
+    font-size: 3rem;
     font-weight: 700;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+   text-shadow: 3px 3px 3px rgba(253, 253, 253, 0.54);
   }
   .text1{
+    color: #ffffff;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 3px rgba(44, 44, 44, 0.5);
+    font-size: 1rem;
+    margin-top: 10px;
     position: absolute;
-    color: rgb(177, 183, 199);
-    font-size: 2cqmax;
-    font-weight: 700;
+    font-weight: 500;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
