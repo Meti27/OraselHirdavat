@@ -168,30 +168,4 @@ padding-bottom: 2vw;
 
 
 
-  .contactfix{
-    flex-direction: column;
-    justify-content: center;
-  }
-  .number1{
-    margin-left: 30vw;
-  }
-  .Contact{
-    align-items: center;
-  }
-  .number{
-    width: 80vw;
-  }
-  .callbutton{
-    margin-left: 20vw;
-    width: 50vw;
-  }
-  .end{
-    flex-direction: column;
-    margin-left: 3vw;
-  }
-  .logo{
-    width: 40vw;
-    height: 20vh;
-  }
-
 }
