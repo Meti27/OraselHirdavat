@@ -148,6 +148,12 @@ a:hover::after {
   height: 100%;
   width: 100%;
 }
+  @media (max-width:1000px){
+    .mySlides1 img{
+      width: 100%;
+      height: 69vh;
+    }
+  }
 img {vertical-align: middle;}
 
 /* Fading animation */
@@ -424,6 +430,19 @@ width: 7vw;
   display: flex;
   flex-direction: column;
 }
+.callbutton1 {
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid; /* Default border color; specify if needed */
+  border-radius: 6px; /* 'md' typically means 'medium' in Tailwind */
+  transition: all 200ms ease-in-out;
+}
+
+.callbutton1:hover {
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* Large shadow effect */
+}
 .About{
   font-size: 1.7vw;
   width: 30vw;
@@ -563,7 +582,7 @@ width: 7vw;
     width: 50vw;
   }
   .callbutton1{
-    width: 5vw;
+    width: 12vw;
     height: 2vh;
     margin-left: 20%;
   }
@@ -893,8 +912,9 @@ textarea{
 
 .about-cards-container{
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
-  height: 60vh;
+  height: auto;
   margin-top: 10vh;
 }
 .about-card{
