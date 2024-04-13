@@ -583,6 +583,12 @@ width: 7vw;
   .About, .About1{
     width: 50vw;
   }
+  .About p{
+    font-size: 4rem;
+  }
+  .About1 p{
+    font-size: 3rem;
+  }
   .callbutton1{
     width: 12vw;
     height: 2vh;
@@ -590,6 +596,14 @@ width: 7vw;
   }
   .number1{
     margin-left: 17vw;
+    font-size: 3rem;
+  }
+  .callbutton1{
+    padding: 20px;
+    height: auto;
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
   }
   .Contact{
     align-items: center;
