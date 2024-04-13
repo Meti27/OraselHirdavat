@@ -198,6 +198,17 @@
           </div>
       </div>
     </div>
+
+    <script>
+
+        function closeMenu() {
+            // Toggle the menu visibility by clicking the menu toggle checkbox
+            var menuToggle = document.getElementById('menu-toggle');
+            menuToggle.checked = false;
+            console.log("clicked")
+        }
+    </script>
+
     <script>document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             document.querySelector('.door-container').style.display = 'none';
