@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Replica Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="font-sans">
+    <div class="door-container">
+        <div class="door door-left"></div>
+        <div class="door door-right"></div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav id="desk-nav" class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+                            <!-- Navbar content here -->
+                            <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+                                <a class="title font-bold text-xl text-gray-800" href="#">Orasel Hirdavat</a>
+                                <div class="nav flex items-center space-x-4">
+                                    <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="index.html">Home</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="about.html">About</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="brands.html">Brands</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="products.html">Products</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="Catalogs.html">Catalogs</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="contact.html">Contact</a>
+                                </div>
+                                <div class="nav flex items-center space-x-4">
+                                    <div class="mobile-menu hidden md:hidden">
+                                        <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Home</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">About</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="#">Brands</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Products</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Catalogs</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Contact</a></div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Mobile menu button -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="mob-nav">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+
+        <div class="menu">
+            <a onclick="closeMenu()" class="close-menu">X</a>
+            <a href="index.html">Home</a>
+            <a href="about.html" >About</a>
+            <div class="dropdown">
+                <a href="brands.html">Brands</a>
+                <a href="products.html">Products</a>
+                <a href="catalogs.html">Catalogs</a>
+            </div>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+    </div>
+    <div class="catalogimg">
+        <img src="images/productsimg.png" alt="">
+        <div class="text"><h1>Catalogs</h1></div>
+        <div class="text1"><h1>Homepage / Catalogs</h1></div>
+    </div>     
+    <div class="container">
+        <div class="heading">
+            <h1>Our Products</h1>
+        </div>
+        <div class="about-cards-container" style="background-color: white ">
+            <!-- Placeholder Box 1 -->
+            <div class="about-card" style="padding-bottom: 40vh">
+                <div class="card-content">
+                    <img src="images/power%20tool-blue.png" alt="">
+                    <h1 style="font-size: 1.3rem">Power Tools</h1>
+                    <p>Please click to get information about and review our power tools products.</p>
+                </div>
+                <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+            </div>
+  
+            <div class="about-card" style="padding-bottom: 40vh">
+                <div class="card-content">
+                    <img src="images/power%20tool-blue.png" alt="">
+                    <h1 style="font-size: 1.3rem">Power Tools</h1>
+                    <p>Please click to get information about and review our power tools products.</p>
+                </div>
+                <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+            </div>
+            <div class="about-card" style="padding-bottom: 40vh">
+                <div class="card-content">
+                    <img src="images/power%20tool-blue.png" alt="">
+                    <h1 style="font-size: 1.3rem">Power Tools</h1>
+                    <p>Please click to get information about and review our power tools products.</p>
+                </div>
+                <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+            </div>
+            <div class="about-card" style="padding-bottom: 40vh">
+                <div class="card-content">
+                    <img src="images/power%20tool-blue.png" alt="">
+                    <h1 style="font-size: 1.3rem">Power Tools</h1>
+                    <p>Please click to get information about and review our power tools products.</p>
+                </div>
+                <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+            </div>
+            <div class="about-card" style="padding-bottom: 40vh">
+                <div class="card-content">
+                    <img src="images/power%20tool-blue.png" alt="">
+                    <h1 style="font-size: 1.3rem">Power Tools</h1>
+                    <p>Please click to get information about and review our power tools products.</p>
+                </div>
+                <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+            </div>
+            <div class="about-card" style="padding-bottom: 40vh">
+                <div class="card-content">
+                    <img src="images/power%20tool-blue.png" alt="">
+                    <h1 style="font-size: 1.3rem">Power Tools</h1>
+                    <p>Please click to get information about and review our power tools products.</p>
+                </div>
+                <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(-40px); border: 3px solid #3498db; font-size: 0.9rem">See More &#10138;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactfix">
+        <div class="Contact">
+            <div class="About"><p>A knowledge that has been handed down from <span class="span1">generation to generation</span> with the same care for <span class="span1">40 years</span>.</p></div>
+            <div class="About1"><p>With our knowledge transferred from generation to generation, we have the responsibility and privilege of doing our job in the best way for 40 years.</p></div>
+    
+        </div>
+        <div class="number">
+            <div class="number1"><i style="font-size:5vw;color: #ffffff;" class="fa">&#xf095;</i></div>
+            <div class="number1">For Your Request</div>
+            <div class="number1">+90 216 629 29 49</div>
+            <a href="#" class="callbutton1 button text-white px-4 py-2 border rounded-md hover:bg-gray-200 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">CALL NOW!</a>
+        </div>
+    </div>
+    
+    
+        <div class="end">
+            <div class="firstrow">
+                <div class="logo"><img src="images/WhatsApp Image 2024-03-27 at 12.57.03.jpeg" alt=""></div>
+                <div>Acibadem Mahallesi Çeçen Sokak Akasya A2 Kule <br> No:25/A 34660 Üsküdar / İstanbul / TURKEY</div>
+                <div>+90 216 629 29 49</div>
+                <div><span class="span1"><a href="">www.orasel.co</a></span></div>
+            </div>
+            <div class="secondrow">
+                <h2>Quick Menu</h2>
+                <a href="index.html">Homepage</a>
+                <a href="">About</a>
+                <a href="products.html">Products</a>
+                <a href="">Brands</a>
+                <a href="Catalogs.html">Catalogs</a>
+                <a href="">Contacts</a>
+            </div>
+            <div class="thirdrow">
+                <h2>Products</h2>                                 
+                <a href="">Power Tools</a>
+                <a href="">Construction Chemicals and Industrial Adhesives</a>
+                <a href="">Hose and Clamps</a>
+                <a href="">Occupational Safety Products</a>
+                <a href="">Abrasives and Abrasives</a>
+                <a href="">Welding Equipment</a>
+    
+            </div>
+            <div class="fourthrow">
+                <h2>Brands</h2>
+                <a href="">V10 Safety</a>
+                <a href="">DeWalt</a>
+                <a href="">Beybi</a>
+                <a href="">Karbosan</a>
+                <a href="">Loctite</a>
+                <a href="">Tesa</a>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-white shadow-lg p-4 text-center">
+            <p class="text-gray-600">© Copyright 2023 ORASEL HIDRAVAT ENDÜSTRİYEL ÜRÜNLER SANAYİ.Design STATUCW</p>
+        </footer>
+        <!-- Modal -->
+    <div class="modal hidden fixed z-50 left-0 top-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto" style="background-color: rgba(0,0,0,0.5);">
+      <div class="modal-content container mx-auto p-4 max-w-xl mt-10 relative">
+          <span class="modal-close absolute top-0 right-0 cursor-pointer px-4 py-2 text-white bg-red-500 hover:bg-red-700 rounded">Close</span>
+          <!-- Modal body -->
+          <div class="bg-white rounded px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Product Details</h3>
+              <div class="mt-2">
+                  <p class="text-sm text-gray-500">
+                      Details about the product or service can be dynamically loaded here.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            document.querySelector('.door-container').style.display = 'none';
+            document.body.classList.add('animated'); // This class removes 'overflow: hidden' from body
+        }, 2000); // This should match the total duration of the animation and any delays
+    });
+    </script>
+</body>
+</html>

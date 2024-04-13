@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="font-sans">
+<div class="door-container">
+  <div class="door door-left"></div>
+  <div class="door door-right"></div>
+  <style>
+    .product-paragraph{
+      padding: 30px;
+      color: #696969;
+      font-size: 1.2rem;
+    }
+    .product-paragraph-title{
+      margin-left: auto;
+      margin-right: auto;
+      padding: 30px;
+      color: #696969;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .product-companies{
+      display: flex;
+    }
+    .product-container{
+      padding: 10vh;
+      width: 80vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 1000px){
+      .product-container{
+        width: 100vw;
+      }
+      .product-paragraph{
+        font-size: 3rem;
+      }
+      .product-paragraph-title{
+        font-size: 3rem;
+        width: 100%;
+      }
+      #button-custom{
+        margin-top: 5vh;
+        font-size: 2rem;
+        height: auto;
+        width: auto;
+
+      }
+    }
+  </style>
+</div>
+<!-- Navigation Bar -->
+<div id="desk-nav-1"class="md:hidden flex items-center">
+  <button class="mobile-menu-button">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+  </button>
+</div>
+<nav id="desk-nav" class="bg-white shadow-lg">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between">
+      <div class="flex space-x-7">
+        <div>
+          <!-- Website Logo -->
+          <div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+            <!-- Navbar content here -->
+            <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+              <a class="title font-bold text-xl text-gray-800" href="#">Orasel Hirdavat</a>
+              <div class="nav flex items-center space-x-4">
+                <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="index.html">Home</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="about.html">About</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="brands.html">Brands</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="products.html">Products</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="Catalogs.html">Catalogs</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="contact.html">Contact</a>
+              </div>
+              <div class="nav flex items-center space-x-4">
+                <div class="mobile-menu hidden md:hidden">
+                  <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Home</a>
+                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">About</a>
+                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="#">Brands</a>
+                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Products</a>
+                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Catalogs</a>
+                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Contact</a></div>
+              </div>
+            </nav>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                   x-show="!showMenu"
+                   fill="none"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   stroke-width="2"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor">
+                <path d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="mob-nav">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="burger-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </label>
+
+  <div class="menu">
+    <a onclick="closeMenu()" class="close-menu">X</a>
+    <a href="index.html">Home</a>
+    <a href="about.html" >About</a>
+    <div class="dropdown">
+      <a href="brands.html">Brands</a>
+      <a href="products.html">Products</a>
+      <a href="Catalogs.html">Catalogs</a>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+
+</nav>
+
+
+<div class="contact-banner">
+  <h1>Occupational Safety Products</h1>
+  <h2>HOMEPAGE / PRODUCTS / OCCUPATIONAL / SAFETY / PRODUCTS</h2>
+</div>
+
+<div class="product-container">
+<p class="product-paragraph">
+  Power tools are equipment that is powered by a mechanism or weld, making difficult remodeling jobs extremely easy. These incredibly useful types of tools are found in nearly every industry, helping to quickly and easily accomplish tasks that would otherwise be impossible or extremely difficult to complete. Power tools are versatile and highly functional products that can be used literally anywhere. The more compact nature of power gears makes them lighter and easier to use, compared to manual tools. The use of all these power tool options is not limited to any setting, occupation or environment, besides, you can choose from among the products according to your needs, as the power tool you will purchase may require a specific use. You can easily use these useful products even on many different hard surfaces, and you can easily perform various repairs and modifications.
+  <br>
+  <h1 class="product-paragraph-title">What Are the Benefits of Using a Power Tool?</h1>
+  <br>
+  Multi-purpose power tools are versatile and functional types of tools that are primarily powered by electricity. Such tools are often used for a variety of purposes that include plumbing, electrical, civil and industrial work. There are many different benefits to using versatile power tools, and these are as follows:
+  <br><ul>
+    <li>• Using a power tool is extremely beneficial, especially for all time-consuming tasks that can take hours to complete, as you can get the job done at high speed with the help of power tools.</li>
+    <li>• Ordinary power tools are commonplace. It gives you an advantage for jobs that cannot be done with tools. You can handle your work more easily and without any problems with suitable products.</li>
+    <li>• You can do more work with less workers by working with power tools. Even if you are not a professional, you can easily solve your job with a power tool.</li>
+    <li>• Hardware power tools are the most effective products for repair and construction work. This is because they make your job manageable without causing too much disruption and inconvenience at work. The use of power tools ensures that the job is done smoothly.</li>
+  </ul>
+  <br>
+  These are some of the most important advantages of using power tools for your business. Power tools offer you convenience in areas such as decoration, repairs, hobby works.
+  <br>
+  <h1 class="product-paragraph-title">Functional Power Tool Options</h1>
+  <br>
+  Power tools are tools that allow you to get your job done on time and with less effort and help you save a lot of time. Power tools are widely used equipment in construction, electrical, plumbing and other industrial work. They are used in many different areas, from home remodeling projects to plumbing and damage repair. The use of multifunctional power tools allows you to complete both construction and repair work in the shortest possible time and with less effort. The first and most important benefit of using a power tool is that it enables to complete long-term tasks at high speed. Many remodeling jobs use power tools, as most time-consuming tasks are easily completed with the help of power tools. That is, these products are used to perform a variety of tasks that cannot be accomplished with simple hand tools. These tools allow increasing employee productivity by simplifying their work and completing different tasks in less time. Thus, by using power tools, you can both save time and perform productive work in home renovation projects. Apart from these products, you can also take a look at the air spray gun options that are easy to use in the home environment.
+  <br>
+  <h1 class="product-paragraph-title">Time Saving Power Tool Types</h1>
+  <br>
+  Power tools are some of the most time-saving devices ever produced. These time-saving functional tools are available in many different types that can be used in different areas. To the question of what are power tools; paint gun, mixer, drill, milling cutter are examples. The most preferred power tool names can be listed as follows:
+  <ul>
+    <li>• Electric drill options are one of the most widely used products both in the home environment and in the construction site or workshop. These drills have enough power to drive screws and drill through thick wood planks.</li>
+    <li>• Chainsaws are also used in many areas. Special versions are also available for cutting trees and cutting branches, as well as for cutting stone and concrete. These power cutters come in many different varieties, including strip, radial arm, and table.</li>
+    <li>• Rotary hammers are a power tool option for heavy-duty tasks such as cutting and drilling hard materials. </li>
+    <li>• The electric screwdriver combines motors and batteries and is an extremely useful, compact tool.</li>
+  </ul>
+  By purchasing these functional and interesting power tools, you can easily and quickly handle many difficult remodeling and repair tasks.
+  <br>
+  <h1 class="product-paragraph-title">Power Tools for Different Budgets</h1>
+  <br>
+  Power tools are equipment that help you perform many complex tasks that cannot be accomplished with normal tools. These tools allow you to greatly increase your productivity by simplifying your work, while enabling you to complete challenging tasks in less time and with less effort. Thanks to these products, which allow you to make repairs very easily and quickly even on the hardest floors, you can produce high quality works in a short time. These products have many types of designs produced for use in different sectors. Whether you are talking about construction, plumbing or any other industry, power tools are commonly used to perform many tasks. Although the prices of power tools vary according to the purpose of use of the product and the functions it has, there is a power tool option that appeals to every budget in general. You can take a look at the product options that appeal to your needs by examining the Votek Industrial power tool brands. By purchasing affordable power tools with Votek Industrial expertise, you can take advantage of all the benefits these functional products offer.
+  <br>
+  <h1 class="product-paragraph-title">View Power Tool Types at Votek Industry</h1>
+  <br>
+  Të përdorura gjerësisht në hidraulik, elektrike, ndërtim dhe punë shtesë industriale, veglat elektrike ofrojnë përfitime të ndryshme për përdoruesit. Ka lloje të këtyre produkteve që mund të përdoren për qëllime të ndryshme, duke lejuar që shumë punë riparimi dhe ndërtimi të kryhen në kohë minimale dhe me më pak përpjekje. Duke kursyer kohë të vlefshme të burimeve njerëzore, veglat elektrike mundësojnë që produktiviteti i tyre të dyfishohet në më shumë se një mënyra. Pra, zakonisht veglat elektrike janë ndoshta zgjidhja më e zgjuar kur një detyrë riparimi kërkon trajtim të pastër dhe të saktë. Ju mund të arrini markat më të mira të mjeteve elektrike përmes Orasel Hirdavat. Mund t'i hidhni një sy opsioneve të mjeteve elektrike me zbritje për përdorim profesional ose hobi. Këto produkte, të cilat ju mundësojnë kryerjen e punimeve të rinovimit dhe riparimit si shpime me çekiç, pistoleta me ajër të nxehtë dhe lëmues, mund t'i blini në një kohë shumë të shkurtër, me çmime të përballueshme. Në të njëjtën kohë, duke përfituar nga fushatat e mjeteve elektrike, ju mund të shijoni përfitimet e këtyre mjeteve të gjithanshme dhe funksionale me çmime që i përshtaten buxhetit tuaj. Duke ekzaminuar produktet tona të stërvitjes me çekiç, të cilat janë ndër produktet e preferuara shpesh, mund t'i merrni me lehtësi këto vegla elektrike që ofrojnë veçori të lehta për t'u përdorur.
+  <br>
+</p>
+
+
+
+<div class="product-companies">
+  <img src="" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
+</div>
+<button id="button-custom">Download Product Group Catalogue</button>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+  function closeMenu() {
+    // Toggle the menu visibility by clicking the menu toggle checkbox
+    var menuToggle = document.getElementById('menu-toggle');
+    menuToggle.checked = false;
+    console.log("clicked")
+  }
+</script>
+
+<script>
+  function startCountersWhenInView(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+
+        let valueDisplays = document.querySelectorAll('.num');
+        let interval = 1500;
+
+        valueDisplays.forEach((valueDisplay) => {
+          let startValue = 0;
+
+          if (valueDisplay.getAttribute("data-val") == 2000) {
+            startValue = 1700;
+          }
+          if (valueDisplay.getAttribute("data-val") == 10000) {
+            startValue = 9700;
+          }
+
+          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+          let duration = Math.floor(interval / endValue);
+          let counter = setInterval(function() {
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) {
+              clearInterval(counter);
+            }
+          }, duration);
+
+          observer.unobserve(entry.target);
+        });
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(startCountersWhenInView, {
+    threshold: 0.8
+  });
+
+  const targetElement = document.querySelector('.about-btm-banner');
+
+  if (targetElement) {
+    observer.observe(targetElement);
+  }
+
+</script>
+
+<div class="catalog-banner">
+  <div class="catalog-container">
+    <div class="catalog-left">
+      <div>
+        <h2 id="catalog-title">CATALOGS</h2>
+        <h1>New season 2024 Have you checked our catalog?</h1>
+        <button id="button-custom" style="margin-left: 30px">&#9432; More information</button>
+      </div>
+    </div>
+
+    <div class="catalog-right">
+      <div>
+        <img src="images/katalog-bg%20copy.png" alt="calatog">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="contactfix" style="margin-top: 0">
+  <div class="Contact">
+    <div class="About"><p>A knowledge that has been handed down from <span class="span1">generation to generation</span> with the same care for <span class="span1">40 years</span>.</p></div>
+    <div class="About1"><p>With our knowledge transferred from generation to generation, we have the responsibility and privilege of doing our job in the best way for 40 years.</p></div>
+
+  </div>
+  <div class="number">
+    <div class="number1"><i style="font-size:5vw;color: #ffffff;" class="fa">&#xf095;</i></div>
+    <div class="number1">For Your Request</div>
+    <div class="number1">+90 216 629 29 49</div>
+    <a href="#" class="callbutton1 button text-white px-4 py-2 border rounded-md hover:bg-gray-200 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">CALL NOW!</a>
+  </div>
+</div>
+
+<div class="end">
+  <div class="firstrow">
+    <div class="logo"><img src="images/WhatsApp%20Image%202024-03-27%20at%2012.57.03.jpeg" alt=""></div>
+    <div>Acibadem Mahallesi Çeçen Sokak Akasya A2 Kule <br> No:25/A 34660 Üsküdar / İstanbul / TURKEY</div>
+    <div>+90 216 629 29 49</div>
+    <div><span class="span1"><a href="">www.orasel.co</a></span></div>
+  </div>
+  <div class="secondrow">
+    <h2>Quick Menu</h2>
+    <a href="">Homepage</a>
+    <a href="">About</a>
+    <a href="">Products</a>
+    <a href="">Brands</a>
+    <a href="">Catalogs</a>
+    <a href="">Contacts</a>
+  </div>
+  <div class="thirdrow">
+    <h2>Products</h2>
+    <a href="">Power Tools</a>
+    <a href="">Construction Chemicals and Industrial Adhesives</a>
+    <a href="">Hose and Clamps</a>
+    <a href="">Occupational Safety Products</a>
+    <a href="">Abrasives and Abrasives</a>
+    <a href="">Welding Equipment</a>
+
+  </div>
+  <div class="fourthrow">
+    <h2>Brands</h2>
+    <a href="">V10 Safety</a>
+    <a href="">DeWalt</a>
+    <a href="">Beybi</a>
+    <a href="">Karbosan</a>
+    <a href="">Loctite</a>
+    <a href="">Tesa</a>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-white shadow-lg p-4 text-center">
+  <p class="text-gray-600">© Copyright 2023 ORASEL HIDRAVAT ENDÜSTRİYEL ÜRÜNLER SANAYİ.Design STATUCW</p>
+</footer>
+<!-- Modal -->
+<div class="modal hidden fixed z-50 left-0 top-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto" style="background-color: rgba(0,0,0,0.5);">
+  <div class="modal-content container mx-auto p-4 max-w-xl mt-10 relative">
+    <span class="modal-close absolute top-0 right-0 cursor-pointer px-4 py-2 text-white bg-red-500 hover:bg-red-700 rounded">Close</span>
+    <!-- Modal body -->
+    <div class="bg-white rounded px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+      <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Product Details</h3>
+      <div class="mt-2">
+        <p class="text-sm text-gray-500">
+          Details about the product or service can be dynamically loaded here.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  //open page animation
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.querySelector('.door-container').style.display = 'none';
+      document.body.classList.add('animated'); // This class removes 'overflow: hidden' from body
+    }, 2000); // This should match the total duration of the animation and any delays
+  });
+
+
+  //
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides1");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000)}; // Change image every 3 seconds
+  //Carousel
+  let currentIndex = 0;
+
+  function nextSlide() {
+    const images = document.querySelectorAll('.sponsor-image');
+    const totalImages = images.length;
+
+    images.forEach(img => img.style.display = 'none'); // Hide all images
+
+    currentIndex++;
+    if (currentIndex > totalImages) {
+      currentIndex = 1; // Loop back to the first image
+    }
+
+    images[currentIndex - 1].style.display = 'block'; // Show the current image
+  }
+
+  // Initialize the slideshow to automatically move to the next slide every 2 seconds
+  setInterval(nextSlide, 2000);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.sponsor-image')[0].style.display = 'block'; // Show the first image initially
+    nextSlide(); // Start the slideshow
+  });
+
+  //for hamburger menu
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+
+
+  //for number count
+  document.addEventListener('DOMContentLoaded', () => {
+    const numberElements = document.querySelectorAll('.count');
+
+    numberElements.forEach((numberElement) => {
+      const targetValue = parseInt(numberElement.getAttribute('data-target'), 10);
+      let currentValue = 0;
+
+      const increment = targetValue / 100; // Adjust the division value to control the speed
+
+      const updateNumber = () => {
+        currentValue += increment;
+
+        if (currentValue > targetValue) {
+          numberElement.innerText = `${targetValue}+`; // Append a plus sign here
+        } else {
+          numberElement.innerText = Math.floor(currentValue);
+          requestAnimationFrame(updateNumber);
+        }
+      };
+
+      updateNumber();
+    });
+  });
+
+
+
+  // Mobile Menu Toggle
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const menu = document.querySelector('.md:hidden');
+
+    menuButton.addEventListener('click', function () {
+      menu.classList.toggle('hidden');
+    });
+  });
+  // Modal Functionality
+  document.addEventListener('DOMContentLoaded', function () {
+    const modalOpenButton = document.querySelector('.modal-open');
+    const modalCloseButton = document.querySelector('.modal-close');
+    const modal = document.querySelector('.modal');
+
+    // Open modal
+    modalOpenButton.addEventListener('click', function () {
+      modal.classList.remove('hidden');
+    });
+
+    // Close modal
+    modalCloseButton.addEventListener('click', function () {
+      modal.classList.add('hidden');
+    });
+
+    // Close modal on outside click
+    window.addEventListener('click', function (e) {
+      if (e.target == modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  });
+</script>
+</body>
+</html>
+</body>
+</html>

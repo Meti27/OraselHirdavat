@@ -1,0 +1,348 @@
+.span1{
+    color:#1E578E;
+}
+h1{
+    font-size: 3vw;
+}
+
+
+a {
+    position: relative;
+    text-decoration: none; /* Removes the default underline */
+    color: #000; /* Set the text color */
+    transition: color 0.3s ease; /* Smooth transition for the text color */
+  }a:hover {
+    color: rgb(24, 24, 22); /* Changes text color to yellow on hover */
+  }
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    bottom: -5px; /* Distance of the underline from the text */
+    left: 0;
+    background-color: rgb(74, 74, 73); /* Initial color of the underline */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover::after {
+    visibility: visible;
+    transform: scaleX(1); /* Scale the underline to full width */
+  }
+  .catalogimg{
+    width: 100vw;
+    height: 45vh;
+    background-color: rgb(67, 63, 63);
+    opacity: 80%;
+    position: relative;
+    text-align: center;
+  }
+  .catalogimg img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: 50% 30%;
+  }
+  .text{
+    position: absolute;
+    color: (71, 71, 68, 0.2);
+    font-size: 3vw;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text1{
+    position: absolute;
+    color: rgb(177, 183, 199);
+    font-size: 2cqmax;
+    font-weight: 700;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+}
+.heading {
+    text-align: center;
+    margin: 20px 0;
+}
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.product-box {
+    width: calc(33.333% - 20px);
+    height: 37vh;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 2vw;
+}
+.product-box img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+.product-box h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+.product-box p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+.product-box button {
+  position: absolute;
+ bottom: 2px;
+ width: 5vw;
+    background-color: #82878d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.product-box button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    .product-box {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .product-box {
+        width: 100%;
+    }
+}
+.contactfix{
+  display: flex;
+  flex-direction: row;
+  padding-top: 4vw;
+  justify-content: space-evenly;
+  background-color: rgba(71, 71, 68, 0.2);
+}
+.Contact{
+  display: flex;
+  flex-direction: column;
+}
+.About{
+  font-size: 1.7vw;
+  width: 30vw;
+  border-left: 0.2vw solid rgb(177, 183, 199);
+  padding-left: 1vw;
+}
+.About1{
+width: 20vw;
+font-size: 1vw;
+padding-left: 1vw;
+padding-bottom: 2vw;
+}
+.number{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.number1{
+
+  justify-content: center;
+}
+.number1 img{
+  width: 5vw;
+  height: 5vh;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-blue-500 {
+  background-color: #3498db; /* Blue */
+}
+
+.bg-blue-700:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.text-white {
+  color: #fff;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.border {
+  border: 1px solid transparent;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.end{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 3vw;
+}
+.firstrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.secondrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.thirdrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fourthrow{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo{
+  width: 15vw;
+  height: 15vh;
+  mix-blend-mode: multiply;
+  object-fit: contain;
+}.logo img{
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+
+.door-right{
+  display: none;
+}
+  .products-grid{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    width: 80vw;
+    padding-bottom: 5vw;
+  }
+  .product-box{
+    width: 100%;
+  }
+  .product-box button{
+    width: 10vw;
+  }
+  .contactfix{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Contact{
+    width: 80vw;
+  }
+  .Contact p{
+    font-size: 2.5vw;
+  }
+  .About, .About1{
+    width: 50vw;
+  }
+  .callbutton1{
+    width: 25vw;
+    height: 5vh;
+    margin-left: 20%;
+  }
+  .number1{
+    margin-left: 17vw;
+  }
+  .Contact{
+    align-items: center;
+  }
+  .number{
+    width: 80vw;
+  }
+  .callbutton{
+    margin-left: 20vw;
+    width: 50vw;
+  }
+  .end{
+    flex-direction: column;
+    margin-left: 3vw;
+  }
+  .logo{
+    width: 40vw;
+    height: 20vh;
+  }
+  h2{
+    font-size: 4vw;
+  }
+}
+  .door {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #fff; /* Changed to white */
+    z-index: 1001;
+    will-change: transform;
+  }
+  
+  .door-left {
+    left: 0;
+    transform: translateX(0%);
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.5s; /* Delay to ensure the page is loaded before doors start to open */
+  }
+  
+  .door-right {
+    right: 0;
+    transform: translateX(0%);
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.5s; /* Same delay as the left door */
+  }
+  
+  @keyframes slideLeft {
+    to {
+        transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes slideRight {
+    to {
+        transform: translateX(100%);
+    }
+  }
+  
+  /* Remove overflow hidden from body after animation */
+  body.animated {
+    overflow: auto;
+  }
