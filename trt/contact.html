@@ -10,6 +10,32 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+  <style>
+    .captcha-container{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding:2vh;
+    }
+    #sendBtn{
+      margin-left: 2vh;
+    }
+
+    @media (max-width: 1000px){
+      .captcha-container{
+        padding: 0 !important;
+        justify-content: center !important;
+        padding: 1vh;
+        margin-top: 2vh;
+      }
+      #sendBtn{
+        margin-top: 4vh;
+      }
+    .captcha-contact{
+      scale: 2;
+    }
+    }
+  </style>
 </head>
 <body class="font-sans">
 <div class="door-container">
@@ -24,71 +50,71 @@
 </div>
 <nav id="desk-nav" class="bg-white shadow-lg">
   <div class="max-w-6xl mx-auto px-4">
-    <div class="flex justify-between">
-      <div class="flex space-x-7">
-        <div>
-          <!-- Website Logo -->
-          <div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md">
-            <!-- Navbar content here -->
-            <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-              <a class="title font-bold text-xl text-gray-800" href="#">Orasel Hirdavat</a>
-              <div class="nav flex items-center space-x-4">
-                <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="index.html">Home</a>
-                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="about.html">About</a>
-                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="brands.html">Brands</a>
-                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="products.html">Products</a>
-                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="Catalogs.html">Catalogs</a>
-                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="contact.html">Contact</a>
+      <div class="flex justify-between">
+          <div class="flex space-x-7">
+              <div>
+                  <!-- Website Logo -->
+                  <div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+                      <!-- Navbar content here -->
+                      <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+                          <a class="title font-bold text-xl text-gray-800" href="#">Orasel Hirdavat</a>
+                          <div class="nav flex items-center space-x-4">
+                              <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/">Anasayfa</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/about">Kurumsal</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="https://oraselnmk.com/brands">Markalar</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/products">Ürünler</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/Catalogs">Kataloglar</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/contact">İletişim</a>
+                          </div>
+                          <div class="nav flex items-center space-x-4">
+                              <div class="mobile-menu hidden md:hidden">
+                                  <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Home</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">About</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="#">Brands</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Products</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Catalogs</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Contact</a></div>
+                          </div>
+                      </nav>
+                  </div>
+                  <!-- Mobile menu button -->
+                  <div class="md:hidden flex items-center">
+                      <button class="outline-none mobile-menu-button">
+                          <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                               x-show="!showMenu"
+                               fill="none"
+                               stroke-linecap="round"
+                               stroke-linejoin="round"
+                               stroke-width="2"
+                               viewBox="0 0 24 24"
+                               stroke="currentColor">
+                              <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                          </svg>
+                      </button>
+                  </div>
               </div>
-              <div class="nav flex items-center space-x-4">
-                <div class="mobile-menu hidden md:hidden">
-                  <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Home</a>
-                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">About</a>
-                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="#">Brands</a>
-                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Products</a>
-                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Catalogs</a>
-                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Contact</a></div>
-              </div>
-            </nav>
           </div>
-          <!-- Mobile menu button -->
-          <div class="md:hidden flex items-center">
-            <button class="outline-none mobile-menu-button">
-              <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
-                   x-show="!showMenu"
-                   fill="none"
-                   stroke-linecap="round"
-                   stroke-linejoin="round"
-                   stroke-width="2"
-                   viewBox="0 0 24 24"
-                   stroke="currentColor">
-                <path d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
       </div>
-    </div>
   </div>
 </nav>
 <nav id="mob-nav">
   <input type="checkbox" id="menu-toggle" class="menu-toggle">
   <label for="menu-toggle" class="burger-menu">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
   </label>
 
   <div class="menu">
-    <a onclick="closeMenu()" class="close-menu">X</a>
-    <a href="index.html">Home</a>
-    <a href="about.html" >About</a>
-    <div class="dropdown">
-      <a href="brands.html">Brands</a>
-      <a href="products.html">Products</a>
-      <a href="catalogs.html">Catalogs</a>
-    </div>
-    <a href="contact.html">Contact</a>
+      <a onclick="closeMenu()" class="close-menu">X</a>
+      <a href="https://oraselnmk.com/">Anasayfa</a>
+      <a href="https://oraselnmk.com/about" >Kurumsal</a>
+      <div class="dropdown">
+          <a href="https://oraselnmk.com/brands">Markalar</a>
+          <a href="https://oraselnmk.com/products">Ürünler</a>
+          <a href="https://oraselnmk.com/Catalogs">Kataloglar</a>
+      </div>
+      <a href="https://oraselnmk.com/contact">İletişim</a>
   </div>
 
 </nav>
@@ -105,21 +131,24 @@
       <h1>Orasel Hirdavat</h1>
 
       <div>
-        <a href="tel:" id="phoneNo"> <strong>Phone:</strong> +389000000</a>
+        <a href="tel:" id="phoneNo"> <strong>Phone:</strong> +389 72 226 866</a>
       </div>
       <div>
-        <a href="mailto:" id="email"><strong>E-Mail:</strong> johndoe@example.com</a>
+        <a href="mailto:info@oraselmakedonya.com" id="email"><strong>E-Mail:</strong> info@oraselmakedonya.com</a>
       </div>
 
-        <p>You can send us all your questions, requests, opinions and complaints by filling out the form on the side. You will be informed as soon as possible.</p>
+        <p>Her türlü soru, istek, görüş ve şikayetlerinizi yandaki formu eksiksiz doldurarak bize ulaştırabilirsiniz. En kısa zamanda tarafınıza bilgi verilecektir.</p>
       </div>
 
     </div>
 
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
   <div class="right-form">
-    <form method="POST" action="https://formsubmit.co/e085167082eaee861cd3cd263c544772">
+    <form method="POST" action="https://api.web3forms.com/submit">
 
       <div id="name-inputs">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
         <input type="text" name="Name" id="full-name" placeholder="Full Name*" required>
         <input type="email" name="E-Mail" id="e-mail" placeholder="E-Mail*" required>
       </div>
@@ -130,6 +159,7 @@
           <textarea name="Message" placeholder=" Type your message here*" required></textarea>
       </div>
         <div>
+         <div class="captcha-container"> <div class="h-captcha captcha-contact" data-captcha="true"></div></div>
         <input type="submit" value="Send" id="sendBtn">
       </div>
 
@@ -145,16 +175,15 @@
   <div class="office-left">
     <div style="display: block">
        <h1 id="office-title"><span id="office-title-center">Center</span> Office</h1>
-       <h2>Acıbadem Mahallesi Çeçen Sokak</h2>
-       <h2>Akasya A2 Kule No:25/A 34660</h2>
-      <h2>Üsküdar / İstanbul / TURKEY</h2>
+       <h2>North Macedonia, Skopje</h2>
+       <h2>Konum Üsküp</h2>
     </div>
   </div>
 
   <div class="office-right">
     <div style="display: block">
-    <button id="button-custom">&#9741; Take me there</button>
-    <div class="office-image"></div>
+    <button id="button-custom">&#9741;Konuma Götür</button>
+  <!--  <div class="office-image"></div> -->
     </div>
     </div>
 
@@ -162,8 +191,8 @@
   </div>
 </div>
 <div class="location-container">
-  <iframe id="location-iframe-desk" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23794.109769689723!2d20.88806737025869!3d41.80107895999584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1351577a0fe3dbdd%3A0x39f635036d650174!2sGostivar!5e0!3m2!1sen!2smk!4v1712514222455!5m2!1sen!2smk" width="1100px" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <iframe  id="location-iframe-mob" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23794.109769689676!2d20.88806737096841!3d41.80107895999597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1351577a0fe3dbdd%3A0x39f635036d650174!2sGostivar!5e0!3m2!1sen!2smk!4v1712775068669!5m2!1sen!2smk" width="1000" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe id="location-iframe-desk" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94881.76732758866!2d21.424890249999997!3d41.99909025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415a58c9aa2a5%3A0xb2ed88c260872020!2sSkopje!5e0!3m2!1sen!2smk!4v1712958356354!5m2!1sen!2smk" width="1100px" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe  id="location-iframe-mob" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94881.76732758866!2d21.424890249999997!3d41.99909025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415a58c9aa2a5%3A0xb2ed88c260872020!2sSkopje!5e0!3m2!1sen!2smk!4v1712958356354!5m2!1sen!2smk" width="1000" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 
@@ -179,28 +208,28 @@
 
 <div class="end">
   <div class="firstrow">
-    <div class="logo"><img src="images/WhatsApp%20Image%202024-03-27%20at%2012.57.03.jpeg" alt=""></div>
-    <div>Acibadem Mahallesi Çeçen Sokak Akasya A2 Kule <br> No:25/A 34660 Üsküdar / İstanbul / TURKEY</div>
-    <div>+90 216 629 29 49</div>
-    <div><span class="span1"><a href="">www.orasel.co</a></span></div>
+    <div class="logo"><img src="images/logo no backround.png" alt=""></div>
+    <div>North Macedonia, Skopje <br> Konum Üsküp</div>
+    <div>+389 72 226 866</div>
+    <div><span class="span1"><a href=""><www class="oraselnmk com"></www></a></span></div>
   </div>
   <div class="secondrow">
     <h2>Quick Menu</h2>
-    <a href="">Homepage</a>
+    <a href="https://oraselnmk.com/">Homepage</a>
     <a href="">About</a>
-    <a href="">Products</a>
-    <a href="">Brands</a>
-    <a href="">Catalogs</a>
-    <a href="">Contacts</a>
+    <a href="https://oraselnmk.com/products">Products</a>
+    <a href="https://oraselnmk.com/brands">Brands</a>
+    <a href="https://oraselnmk.com/Catalogs">Catalogs</a>
+    <a href="https://oraselnmk.com/contact">Contacts</a>
   </div>
   <div class="thirdrow">
     <h2>Products</h2>
-    <a href="">Power Tools</a>
-    <a href="">Construction Chemicals and Industrial Adhesives</a>
-    <a href="">Hose and Clamps</a>
-    <a href="">Occupational Safety Products</a>
-    <a href="">Abrasives and Abrasives</a>
-    <a href="">Welding Equipment</a>
+    <a href="https://oraselnmk.com/Powertools">Power Tools</a>
+    <a href="https://oraselnmk.com/chemicals">Construction Chemicals and Industrial Adhesives</a>
+    <a href="https://oraselnmk.com/hose">Hose and Clamps</a>
+    <a href="https://oraselnmk.com/occupationalsafetyproducts">Occupational Safety Products</a>
+    <a href="https://oraselnmk.com/abrasives">Abrasives and Abrasives</a>
+    <a href="https://oraselnmk.com/wielding">Welding Equipment</a>
 
   </div>
   <div class="fourthrow">
