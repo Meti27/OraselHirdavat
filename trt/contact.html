@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    .captcha-container{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding:2vh;
+    }
+    #sendBtn{
+      margin-left: 2vh;
+    }
+
+    @media (max-width: 1000px){
+      .captcha-container{
+        padding: 0 !important;
+        justify-content: center !important;
+        padding: 1vh;
+        margin-top: 2vh;
+      }
+      #sendBtn{
+        margin-top: 4vh;
+      }
+    .captcha-contact{
+      scale: 2;
+    }
+    }
+  </style>
+</head>
+<body class="font-sans">
+<div class="door-container">
+  <div class="door door-left"></div>
+  <div class="door door-right"></div>
+</div>
+<!-- Navigation Bar -->
+<div id="desk-nav-1"class="md:hidden flex items-center">
+  <button class="mobile-menu-button">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+  </button>
+</div>
+<nav id="desk-nav" class="bg-white shadow-lg">
+  <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+          <div class="flex space-x-7">
+              <div>
+                  <!-- Website Logo -->
+                  <div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+                      <!-- Navbar content here -->
+                      <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+                          <a class="title font-bold text-xl text-gray-800" href="#">Orasel Hirdavat</a>
+                          <div class="nav flex items-center space-x-4">
+                              <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/">Anasayfa</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/about">Kurumsal</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="https://oraselnmk.com/brands">Markalar</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/products">Ürünler</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/Catalogs">Kataloglar</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/contact">İletişim</a>
+                          </div>
+                          <div class="nav flex items-center space-x-4">
+                              <div class="mobile-menu hidden md:hidden">
+                                  <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Home</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">About</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="#">Brands</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Products</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Catalogs</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Contact</a></div>
+                          </div>
+                      </nav>
+                  </div>
+                  <!-- Mobile menu button -->
+                  <div class="md:hidden flex items-center">
+                      <button class="outline-none mobile-menu-button">
+                          <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                               x-show="!showMenu"
+                               fill="none"
+                               stroke-linecap="round"
+                               stroke-linejoin="round"
+                               stroke-width="2"
+                               viewBox="0 0 24 24"
+                               stroke="currentColor">
+                              <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</nav>
+<nav id="mob-nav">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="burger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </label>
+
+  <div class="menu">
+      <a onclick="closeMenu()" class="close-menu">X</a>
+      <a href="https://oraselnmk.com/">Anasayfa</a>
+      <a href="https://oraselnmk.com/about" >Kurumsal</a>
+      <div class="dropdown">
+          <a href="https://oraselnmk.com/brands">Markalar</a>
+          <a href="https://oraselnmk.com/products">Ürünler</a>
+          <a href="https://oraselnmk.com/Catalogs">Kataloglar</a>
+      </div>
+      <a href="https://oraselnmk.com/contact">İletişim</a>
+  </div>
+
+</nav>
+
+<div class="contact-banner">
+  <h1>Contact</h1>
+  <h2>HOMEPAGE / CONTACT</h2>
+  </div>
+
+<div class="form-container">
+
+  <div class="left-form">
+    <div>
+      <h1>Orasel Hirdavat</h1>
+
+      <div>
+        <a href="tel:" id="phoneNo"> <strong>Phone:</strong> +389 72 226 866</a>
+      </div>
+      <div>
+        <a href="mailto:info@oraselmakedonya.com" id="email"><strong>E-Mail:</strong> info@oraselmakedonya.com</a>
+      </div>
+
+        <p>Her türlü soru, istek, görüş ve şikayetlerinizi yandaki formu eksiksiz doldurarak bize ulaştırabilirsiniz. En kısa zamanda tarafınıza bilgi verilecektir.</p>
+      </div>
+
+    </div>
+
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+  <div class="right-form">
+    <form method="POST" action="https://api.web3forms.com/submit">
+
+      <div id="name-inputs">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="text" name="Name" id="full-name" placeholder="Full Name*" required>
+        <input type="email" name="E-Mail" id="e-mail" placeholder="E-Mail*" required>
+      </div>
+
+      <input type="tel" name="Phone number" id="phone" placeholder="Your Phone Number*" required>
+      <input type="text" name="Subject" id="subject" placeholder="Subject*" required>
+      <div id="message-input">
+          <textarea name="Message" placeholder=" Type your message here*" required></textarea>
+      </div>
+        <div>
+         <div class="captcha-container"> <div class="h-captcha captcha-contact" data-captcha="true"></div></div>
+        <input type="submit" value="Send" id="sendBtn">
+      </div>
+
+
+    </form>
+  </div>
+
+</div>
+
+</div>
+
+<div class="office-container">
+  <div class="office-left">
+    <div style="display: block">
+       <h1 id="office-title"><span id="office-title-center">Center</span> Office</h1>
+       <h2>North Macedonia, Skopje</h2>
+       <h2>Konum Üsküp</h2>
+    </div>
+  </div>
+
+  <div class="office-right">
+    <div style="display: block">
+    <button id="button-custom">&#9741;Konuma Götür</button>
+  <!--  <div class="office-image"></div> -->
+    </div>
+    </div>
+
+
+  </div>
+</div>
+<div class="location-container">
+  <iframe id="location-iframe-desk" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94881.76732758866!2d21.424890249999997!3d41.99909025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415a58c9aa2a5%3A0xb2ed88c260872020!2sSkopje!5e0!3m2!1sen!2smk!4v1712958356354!5m2!1sen!2smk" width="1100px" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe  id="location-iframe-mob" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94881.76732758866!2d21.424890249999997!3d41.99909025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415a58c9aa2a5%3A0xb2ed88c260872020!2sSkopje!5e0!3m2!1sen!2smk!4v1712958356354!5m2!1sen!2smk" width="1000" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+<script>
+
+  function closeMenu() {
+    // Toggle the menu visibility by clicking the menu toggle checkbox
+    var menuToggle = document.getElementById('menu-toggle');
+    menuToggle.checked = false;
+    console.log("clicked")
+  }
+</script>
+
+<div class="end">
+  <div class="firstrow">
+    <div class="logo"><img src="images/logo no backround.png" alt=""></div>
+    <div>North Macedonia, Skopje <br> Konum Üsküp</div>
+    <div>+389 72 226 866</div>
+    <div><span class="span1"><a href=""><www class="oraselnmk com"></www></a></span></div>
+  </div>
+  <div class="secondrow">
+    <h2>Quick Menu</h2>
+    <a href="https://oraselnmk.com/">Homepage</a>
+    <a href="">About</a>
+    <a href="https://oraselnmk.com/products">Products</a>
+    <a href="https://oraselnmk.com/brands">Brands</a>
+    <a href="https://oraselnmk.com/Catalogs">Catalogs</a>
+    <a href="https://oraselnmk.com/contact">Contacts</a>
+  </div>
+  <div class="thirdrow">
+    <h2>Products</h2>
+    <a href="https://oraselnmk.com/Powertools">Power Tools</a>
+    <a href="https://oraselnmk.com/chemicals">Construction Chemicals and Industrial Adhesives</a>
+    <a href="https://oraselnmk.com/hose">Hose and Clamps</a>
+    <a href="https://oraselnmk.com/occupationalsafetyproducts">Occupational Safety Products</a>
+    <a href="https://oraselnmk.com/abrasives">Abrasives and Abrasives</a>
+    <a href="https://oraselnmk.com/wielding">Welding Equipment</a>
+
+  </div>
+  <div class="fourthrow">
+    <h2>Brands</h2>
+    <a href="">V10 Safety</a>
+    <a href="">DeWalt</a>
+    <a href="">Beybi</a>
+    <a href="">Karbosan</a>
+    <a href="">Loctite</a>
+    <a href="">Tesa</a>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-white shadow-lg p-4 text-center">
+  <p class="text-gray-600">© Copyright 2023 ORASEL HIDRAVAT ENDÜSTRİYEL ÜRÜNLER SANAYİ.Design STATUCW</p>
+</footer>
+<!-- Modal -->
+<div class="modal hidden fixed z-50 left-0 top-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto" style="background-color: rgba(0,0,0,0.5);">
+  <div class="modal-content container mx-auto p-4 max-w-xl mt-10 relative">
+    <span class="modal-close absolute top-0 right-0 cursor-pointer px-4 py-2 text-white bg-red-500 hover:bg-red-700 rounded">Close</span>
+    <!-- Modal body -->
+    <div class="bg-white rounded px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+      <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Product Details</h3>
+      <div class="mt-2">
+        <p class="text-sm text-gray-500">
+          Details about the product or service can be dynamically loaded here.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  //open page animation
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.querySelector('.door-container').style.display = 'none';
+      document.body.classList.add('animated'); // This class removes 'overflow: hidden' from body
+    }, 2000); // This should match the total duration of the animation and any delays
+  });
+
+
+  //
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides1");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000)}; // Change image every 3 seconds
+  //Carousel
+  let currentIndex = 0;
+
+  function nextSlide() {
+    const images = document.querySelectorAll('.sponsor-image');
+    const totalImages = images.length;
+
+    images.forEach(img => img.style.display = 'none'); // Hide all images
+
+    currentIndex++;
+    if (currentIndex > totalImages) {
+      currentIndex = 1; // Loop back to the first image
+    }
+
+    images[currentIndex - 1].style.display = 'block'; // Show the current image
+  }
+
+  // Initialize the slideshow to automatically move to the next slide every 2 seconds
+  setInterval(nextSlide, 2000);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.sponsor-image')[0].style.display = 'block'; // Show the first image initially
+    nextSlide(); // Start the slideshow
+  });
+
+  //for hamburger menu
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+
+
+  //for number count
+  document.addEventListener('DOMContentLoaded', () => {
+    const numberElements = document.querySelectorAll('.count');
+
+    numberElements.forEach((numberElement) => {
+      const targetValue = parseInt(numberElement.getAttribute('data-target'), 10);
+      let currentValue = 0;
+
+      const increment = targetValue / 100; // Adjust the division value to control the speed
+
+      const updateNumber = () => {
+        currentValue += increment;
+
+        if (currentValue > targetValue) {
+          numberElement.innerText = `${targetValue}+`; // Append a plus sign here
+        } else {
+          numberElement.innerText = Math.floor(currentValue);
+          requestAnimationFrame(updateNumber);
+        }
+      };
+
+      updateNumber();
+    });
+  });
+
+
+
+  // Mobile Menu Toggle
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const menu = document.querySelector('.md:hidden');
+
+    menuButton.addEventListener('click', function () {
+      menu.classList.toggle('hidden');
+    });
+  });
+  // Modal Functionality
+  document.addEventListener('DOMContentLoaded', function () {
+    const modalOpenButton = document.querySelector('.modal-open');
+    const modalCloseButton = document.querySelector('.modal-close');
+    const modal = document.querySelector('.modal');
+
+    // Open modal
+    modalOpenButton.addEventListener('click', function () {
+      modal.classList.remove('hidden');
+    });
+
+    // Close modal
+    modalCloseButton.addEventListener('click', function () {
+      modal.classList.add('hidden');
+    });
+
+    // Close modal on outside click
+    window.addEventListener('click', function (e) {
+      if (e.target == modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  });
+</script>
+</body>
+</html>

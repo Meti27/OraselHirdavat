@@ -1,0 +1,25 @@
+a {
+    position: relative;
+    text-decoration: none; /* Removes the default underline */
+    color: #000; /* Set the text color */
+    transition: color 0.3s ease; /* Smooth transition for the text color */
+  }a:hover {
+    color: rgb(24, 24, 22); /* Changes text color to yellow on hover */
+  }
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    bottom: -5px; /* Distance of the underline from the text */
+    left: 0;
+    background-color: rgb(74, 74, 73); /* Initial color of the underline */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover::after {
+    visibility: visible;
+    transform: scaleX(1); /* Scale the underline to full width */
+  }

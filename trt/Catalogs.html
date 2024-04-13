@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Replica Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="catalogs.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="font-sans">
+    <div class="door-container">
+        <div class="door door-left"></div>
+        <div class="door door-right"></div>
+    </div>
+    <!-- Navigation Bar -->
+
+    <nav id="desk-nav" class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+                            <!-- Navbar content here -->
+                            <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+                                <img src="images/logo%20no%20backround.png" style="height: 8vh; width: 10vw">
+                                <!--  <a class="title font-bold text-xl text-gray-800" href="#">Orasel Hirdavat</a> -->
+
+                                <div class="nav flex items-center space-x-4">
+                                    <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/">Anasayfa</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/about">Kurumsal</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="https://oraselnmk.com/brands">Markalar</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/products">Ürünler</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/Catalogs">Kataloglar</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/contact">İletişim</a>
+                                </div>
+                                <div class="nav flex items-center space-x-4">
+                                    <div class="mobile-menu hidden md:hidden">
+                                        <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Home</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">About</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="#">Brands</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Products</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Catalogs</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Contact</a></div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Mobile menu button -->
+                        <div class="md:hidden flex items-center">
+                            <button class="outline-none mobile-menu-button">
+                                <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                                     x-show="!showMenu"
+                                     fill="none"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round"
+                                     stroke-width="2"
+                                     viewBox="0 0 24 24"
+                                     stroke="currentColor">
+                                    <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="mob-nav">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+    
+        <div class="menu">
+            <a onclick="closeMenu()" class="close-menu">X</a>
+            <a href="https://oraselnmk.com/">Anasayfa</a>
+            <a href="https://oraselnmk.com/about" >Kurumsal</a>
+            <div class="dropdown">
+                <a href="https://oraselnmk.com/brands">Markalar</a>
+                <a href="https://oraselnmk.com/products">Ürünler</a>
+                <a href="https://oraselnmk.com/Catalogs">Kataloglar</a>
+            </div>
+            <a href="https://oraselnmk.com/contact">İletişim</a>
+        </div>
+    
+    </nav>
+
+    <div class="catalogimg">
+        <img src="images/cataloges.jpg" alt="">
+        <div class="textcatalog"><h1>Kataloglar</h1></div>
+        <div class="text1catalog"><h1>ANASAYFA / KATALOGLAR</h1></div>
+    </div>
+
+    <div class="gridcatalog">
+        <div class="flexcatalog">
+        <div class="pdf"><a href="Catalogs/stanley1.pdf" target=_blank><img src="Catalogs/d79a46838bda9ca1d80d434504119669.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/stanley2.pdf" target=_blank><img src="Catalogs/2.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/ansell3.pdf" target=_blank><img src="Catalogs/3.jpg" alt=""></a></div>
+    </div>
+    <div class="flexcatalog">
+        <div class="pdf"><a href="Catalogs/3M4.pdf" target=_blank><img src="Catalogs/4.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/Karbosan5.pdf" target=_blank><img src="Catalogs/5.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/Askaynak6.pdf" target=_blank><img src="Catalogs/6.jpg" alt=""></a></div>
+    </div>
+    <div class="flexcatalog">
+        <div class="pdf"><a href="Catalogs/yildiz7.pdf" target=_blank><img src="Catalogs/7.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/Henkel.pdf" target=_blank><img src="Catalogs/8.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/Loctice9.pdf" target=_blank><img src="Catalogs/9.jpg" alt=""></a></div>
+    </div>
+    <div class="flexcatalog">
+        <div class="pdf"><a href="Catalogs/best10.pdf" target=_blank><img src="Catalogs/10.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/tesa11.pdf" target=_blank><img src="Catalogs/11.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/bally12.pdf" target=_blank><img src="Catalogs/12.jpg" alt=""></a></div>
+    </div>
+    <div class="flexcatalog">
+        <div class="pdf"><a href="Catalogs/Dayson13.pdf" target=_blank><img src="Catalogs/13.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/Fisco14.pdf" target=_blank><img src="Catalogs/14.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/Sprenger15.pdf" target=_blank><img src="Catalogs/15.jpg" alt=""></a></div>
+    </div>
+    <div class="flexcatalog">
+        <div class="pdf"><a href="Catalogs/Erbi17.pdf" target=_blank><img src="Catalogs/16.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/tork18.pdf" target=_blank><img src="Catalogs/17.jpg" alt=""></a></div>
+        <div class="pdf"><a href="Catalogs/sel19.pdf" target=_blank><img src="Catalogs/18.jpg" alt=""></a></div>
+    </div>
+    </div>
+    <div class="contactfix" style="margin-top: 0">
+        <div class="Contact">
+            <div class="About"><p><span class="span1">Kuşaktan kuşağa</span> aynı özenle <span class="span1">40 yıldır</span> aktarılan bir bilgi.</p></div>
+            <div class="About1"><p>Kuşaktan kuşağa aktardığımız bilgilerimizle, işimizi 40 yıldır en iyi şekilde yapma sorumluluğuna ve ayrıcalığına sahibiz.</p></div>
+        </div>
+        <div class="number">
+            <div class="number1"><i style="font-size:5vw;color: #000000;" class="fa">&#xf095;</i></div>
+            <div class="number1">Talebiniz İçin</div>
+            <div class="number1">+389 72 226 866</div>
+            <a href="tel:+38972226866" class="callbutton1 button">Hemen Ara!</a>
+        </div>
+    </div>
+    
+    <div class="end">
+        <div class="firstrow">
+            <div class="logo"><img src="images/logo no backround.png" alt=""></div>
+            <div>Kuzey Makedonya, Üsküp <br> Konum Üsküp</div>
+            <div>+389 72 226 866</div>
+            <div><span class="span1"><a href=""><www class="oraselnmk com"></www></a></span></div>
+        </div>
+        <div class="secondrow">
+            <h2>Hızlı Menü</h2>
+            <a href="">Ana Sayfa</a>
+            <a href="">Hakkında</a>
+            <a href="">Ürünler</a>
+            <a href="">Markalar</a>
+            <a href="">Kataloglar</a>
+            <a href="">İletişim</a>
+        </div>
+        <div class="thirdrow">
+            <h2>Ürünler</h2>
+            <a href="">Güç Aletleri</a>
+            <a href="">Yapı Kimyasalları ve Endüstriyel Yapıştırıcılar</a>
+            <a href="">Hortum ve Kelepçeler</a>
+            <a href="">İş Güvenliği Ürünleri</a>
+            <a href="">Aşındırıcılar ve Zımparalar</a>
+            <a href="">Kaynak Ekipmanları</a>
+    
+        </div>
+        <div class="fourthrow">
+            <h2>Markalar</h2>
+            <a href="">V10 Güvenlik</a>
+            <a href="">DeWalt</a>
+            <a href="">Beybi</a>
+            <a href="">Karbosan</a>
+            <a href="">Loctite</a>
+            <a href="">Tesa</a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-white shadow-lg p-4 text-center">
+        <p class="text-gray-600">© Telif Hakkı 2023 ORASEL HIDRAVAT ENDÜSTRİYEL ÜRÜNLER SANAYİ. Tasarım STATUCW</p>
+    </footer>
+    <!-- Modal -->
+    <div class="modal hidden fixed z-50 left-0 top-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-content container mx-auto p-4 max-w-xl mt-10 relative">
+            <span class="modal-close absolute top-0 right-0 cursor-pointer px-4 py-2 text-white bg-red-500 hover:bg-red-700 rounded">Kapat</span>
+            <!-- Modal body -->
+            <div class="bg-white rounded px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Ürün Detayları</h3>
+                <div class="mt-2">
+                    <p class="text-sm text-gray-500">
+                        Ürün veya hizmet hakkında detaylar buraya dinamik olarak yüklenebilir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+
+        function closeMenu() {
+            // Toggle the menu visibility by clicking the menu toggle checkbox
+            var menuToggle = document.getElementById('menu-toggle');
+            menuToggle.checked = false;
+            console.log("clicked")
+        }
+    </script>
+
+    <script>document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            document.querySelector('.door-container').style.display = 'none';
+            document.body.classList.add('animated'); // This class removes 'overflow: hidden' from body
+        }, 2000); // This should match the total duration of the animation and any delays
+    });
+    </script>
+    
+    
+</body>
+</html>

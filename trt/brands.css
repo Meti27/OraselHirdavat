@@ -1,0 +1,143 @@
+
+.door {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #fff; /* Changed to white */
+    z-index: 1001;
+    will-change: transform;
+  }
+  
+  .door-left {
+    left: 0;
+    transform: translateX(0%);
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.5s; /* Delay to ensure the page is loaded before doors start to open */
+  }
+  
+  .door-right {
+    right: 0;
+    transform: translateX(0%);
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.5s; /* Same delay as the left door */
+  }
+  
+  @keyframes slideLeft {
+    to {
+        transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes slideRight {
+    to {
+        transform: translateX(100%);
+    }
+  }
+  
+  /* Remove overflow hidden from body after animation */
+  body.animated {
+    overflow: auto;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  h2{
+    font-size: 1.2vw;
+    font-weight: 500;
+  }
+  a {
+    position: relative;
+    text-decoration: none; /* Removes the default underline */
+    color: #000; /* Set the text color */
+    transition: color 0.3s ease; /* Smooth transition for the text color */
+  }
+  
+  a:hover {
+    color: rgb(24, 24, 22); /* Changes text color to yellow on hover */
+  }
+  
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    bottom: -5px; /* Distance of the underline from the text */
+    left: 0;
+    background-color: rgb(74, 74, 73); /* Initial color of the underline */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover::after {
+    visibility: visible;
+    transform: scaleX(1); /* Scale the underline to full width */
+  }
+
+
+
+
+.catalogimg{
+    width: 100vw;
+    height: 45vh;
+    background-color: rgb(67, 63, 63);
+    opacity: 90%;
+    position: relative;
+    text-align: center;
+  }
+  .catalogimg img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: 50% 30%;
+  }
+  .textbrand{
+    position: absolute;
+    color:  #3498db;
+    font-size: 3rem;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 3px rgba(44, 44, 44, 0.5);
+  }
+  .text1brand{
+    color: #ffffff;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 3px rgba(44, 44, 44, 0.5);
+    font-size: 1rem;
+    margin-top: 10px;
+    position: absolute;
+    font-weight: 500;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .gridbrand{
+    
+    margin-top: 5vw;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+  .flexbrand{
+    display: flex;
+    flex-direction: row;
+justify-content: space-evenly;
+    margin-top: 2vh;
+    margin: 2vw;
+  }
+
+  .pdf{
+    width: 20vw;
+    height: auto;
+    text-align: center;
+  }
+ 
+  

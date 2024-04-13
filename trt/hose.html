@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="font-sans">
+<div class="door-container">
+  <div class="door door-left"></div>
+  <div class="door door-right"></div>
+  <style>
+    body{
+      color: #696969;
+      font-size: 1.2rem;
+    }
+    .product-paragraph{
+      padding: 30px;
+      color: #696969;
+      font-size: 1.2rem;
+    }
+    .product-paragraph-title{
+      margin-left: auto;
+      margin-right: auto;
+      padding: 30px;
+      color: #696969;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .product-companies{
+      display: flex;
+      width: 10vw;
+      height: auto;
+      margin-top: 3vh;
+    }
+    .product-companies img{
+      
+      width: 100%;
+      height: 100%;
+    }
+    .product-container{
+      padding: 5vh;
+      width: 80vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 1000px){
+      .product-container{
+        width: 100vw;
+      }
+      .product-paragraph{
+        font-size: 3rem;
+      }
+      .product-paragraph-title{
+        font-size: 3rem;
+        width: 100%;
+      }
+      #button-custom{
+        margin-top: 5vh;
+        font-size: 2rem;
+        height: auto;
+        width: auto;
+
+      }
+    }
+  </style>
+</div>
+<!-- Navigation Bar -->
+<div id="desk-nav-1"class="md:hidden flex items-center">
+  <button class="mobile-menu-button">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+  </button>
+</div>
+<nav id="desk-nav" class="bg-white shadow-lg">
+  <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+          <div class="flex space-x-7">
+              <div>
+                  <!-- Website Logo -->
+                  <div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+                      <!-- Navbar content here -->
+                      <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+                          <a class="title font-bold text-xl text-gray-800" href="#">Orasel Hirdavat</a>
+                          <div class="nav flex items-center space-x-4">
+                              <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/">Anasayfa</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/about">Kurumsal</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="https://oraselnmk.com/brands">Markalar</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/products">Ürünler</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/Catalogs">Kataloglar</a>
+                              <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/contact">İletişim</a>
+                          </div>
+                          <div class="nav flex items-center space-x-4">
+                              <div class="mobile-menu hidden md:hidden">
+                                  <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Home</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">About</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="#">Brands</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Products</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Catalogs</a>
+                                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Contact</a></div>
+                          </div>
+                      </nav>
+                  </div>
+                  <!-- Mobile menu button -->
+                  <div class="md:hidden flex items-center">
+                      <button class="outline-none mobile-menu-button">
+                          <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                               x-show="!showMenu"
+                               fill="none"
+                               stroke-linecap="round"
+                               stroke-linejoin="round"
+                               stroke-width="2"
+                               viewBox="0 0 24 24"
+                               stroke="currentColor">
+                              <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</nav>
+<nav id="mob-nav">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="burger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </label>
+
+  <div class="menu">
+      <a onclick="closeMenu()" class="close-menu">X</a>
+      <a href="https://oraselnmk.com/">Anasayfa</a>
+      <a href="https://oraselnmk.com/about" >Kurumsal</a>
+      <div class="dropdown">
+          <a href="https://oraselnmk.com/brands">Markalar</a>
+          <a href="https://oraselnmk.com/products">Ürünler</a>
+          <a href="https://oraselnmk.com/Catalogs">Kataloglar</a>
+      </div>
+      <a href="https://oraselnmk.com/contact">İletişim</a>
+  </div>
+
+</nav>
+
+
+<div class="contact-banner">
+  <h1>Hose</h1>
+  <h2>HOMEPAGE / PRODUCTS / OCCUPATIONAL / SAFETY / PRODUCTS</h2>
+</div>
+
+<div class="product-container">
+  <h1 class="product-paragraph-title">Industrial Hoses</h1>
+  <p class="product-paragraph">Industrial hoses are special hoses that can show resistance at high pressures and temperatures, and can be used in industrial areas in caustic, corrosive and all weather conditions. Industrial hoses are manufactured with a special rubber outer sheath that is resistant to chemical heat and lubricant, reinforced with a metal braid or textile sheath. The connection of the hoses with the unions are those that carry high pressures and are heavy-duty. Industrial hoses are generally used in hydraulic, pneumatic and chemical processing systems.</p>
+ <h1 class="product-paragraph-title">Hydraulic Hoses</h1>
+  <p class="product-paragraph">They are hydraulic circuit elements that are more preferred in industrial environments and provide the transmission of fluid pressure to the hydraulic system. The features of synthetic rubber, synthetic textile and steel wire braid layers that increase durability are also important details in the systems where hydraulic hoses will be used. Hydraulic hoses are an indispensable element of a hydraulic circuit in order to ensure the continuity of operation and continuity in industrial environments.</p>
+ <h1 class="product-paragraph-title">Fiberglass and Silicone Coated Hoses</h1>
+  <p class="product-paragraph">In order to increase the durability of the hydraulic hoses used and to strengthen the technical features, as Votek Industry, we offer our products to our customers, where silicone coating is applied to the hoses together with glass fiber.</p>
+ <h1 class="product-paragraph-title">Stainless Steel Flex Braided Hoses</h1>
+  <p class="product-paragraph">In order to best meet the needs of our customers according to the areas they work in, our stainless steel flex braided hoses, which we produce with our expert and technical team, are resistant to corrosion, abrasion and very high temperatures.</p>
+ <h1 class="product-paragraph-title">Composite Hoses</h1>
+  <p class="product-paragraph">Composite hoses are covered with a sheath made of polypropylene (PP) material to increase friction and impact resistance. Its inner and outer surfaces are reinforced with steel spiral wire. It is used in fuel stations, ship refueling, chemical, food, steam absorption and discharge places.</p>
+  <h1 class="product-paragraph-title">Clamps</h1>
+  <p class="product-paragraph">Votek Industry, which offers a wide range of products in the fastener sector, continues to expand its product range by incorporating hose clamps group products.</p>
+  <br>
+  <p class="product-paragraph">Today, clamp types that offer practical solutions promise a wide range of use and durability.</p>
+  <br>
+  <p class="product-paragraph">Hose Clamps group products can be used in different areas such as heating-cooling systems, exhaust systems, passenger safety systems, steering systems, constant velocity joints, medical applications, white goods applications, food and beverage systems.</p>
+  <br>
+  <p class="product-paragraph">Our range of clamps provide uniform compression and surface pressure at 360 degrees. With Toothlook technology, it provides very high and permanent compression ratios and high resistance to pressure and expansion. The increased ear width allows the diameter range to be expanded.</p>
+  <br>
+  <p class="product-paragraph">We use clamp products of high quality standards to ensure that every connection works properly in the long run. In this way, we always try to provide a secure and correct connection. Burr-free edges have a significant advantage over conventional edges in order to protect the clamped parts from damage and prevent possible accidents during assembly.</p>
+  <br>
+  <p class="product-paragraph">The safety hook on the clamps prevents unwanted opening. In this special design, steps or overlaps on the inner circumference of the clamp are eliminated.</p>
+  <br>
+  <p class="product-paragraph">Because the tongue fits in the groove, the “tongue and groove” feature exerts 360-degree pressure on the assembled parts. This ensures that a full radial force is continuously applied around the coupling diameter of the clamp. The new CrossTech feature offers an ultra-low profile design to save space and reduce instability in rotating parts. The unique "ToothLock®" thread locking feature offers extremely high and stable compression ratios, exceptional expansion resistance and is strong enough for the toughest connections.</p>
+  <br>
+  <p class="product-paragraph">Our clamp group products include Ear Hose Clamps, Low Profile Clamps, Screw and Universal Clamps, Collapsible Ring Clamps, Hanger Clamps and Profile Clamps.</p>
+  <br>
+  <p class="product-paragraph">You can contact the experienced sales representatives of Votek Industry to get more information about Hose Clamps group products and to find the most suitable clamp model for your business.</p>
+
+<div class="product-companies">
+  <img src="brandspdf/17.png" alt="">
+  <img src="brandspdf/15.png" alt="">
+  <img src="brandspdf/16.png" alt="">
+  <img src="" alt="">
+</div>
+<button id="button-custom">Download Product Group Catalogue</button>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+  function closeMenu() {
+    // Toggle the menu visibility by clicking the menu toggle checkbox
+    var menuToggle = document.getElementById('menu-toggle');
+    menuToggle.checked = false;
+    console.log("clicked")
+  }
+</script>
+
+<script>
+  function startCountersWhenInView(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+
+        let valueDisplays = document.querySelectorAll('.num');
+        let interval = 1500;
+
+        valueDisplays.forEach((valueDisplay) => {
+          let startValue = 0;
+
+          if (valueDisplay.getAttribute("data-val") == 2000) {
+            startValue = 1700;
+          }
+          if (valueDisplay.getAttribute("data-val") == 10000) {
+            startValue = 9700;
+          }
+
+          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+          let duration = Math.floor(interval / endValue);
+          let counter = setInterval(function() {
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) {
+              clearInterval(counter);
+            }
+          }, duration);
+
+          observer.unobserve(entry.target);
+        });
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(startCountersWhenInView, {
+    threshold: 0.8
+  });
+
+  const targetElement = document.querySelector('.about-btm-banner');
+
+  if (targetElement) {
+    observer.observe(targetElement);
+  }
+
+</script>
+
+<div class="catalog-banner">
+  <div class="catalog-container">
+    <div class="catalog-left">
+      <div>
+        <h2 id="catalog-title">CATALOGS</h2>
+        <h1>New season 2024 Have you checked our catalog?</h1>
+        <button id="button-custom" style="margin-left: 30px">&#9432; More information</button>
+      </div>
+    </div>
+
+    <div class="catalog-right">
+      <div>
+        <img src="images/katalog-bg%20copy.png" alt="calatog">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="contactfix" style="margin-top: 0">
+  <div class="Contact">
+      <div class="About"><p><span class="span1">Kuşaktan kuşağa</span> aynı özenle <span class="span1">40 yıldır</span> aktarılan bir bilgi.</p></div>
+      <div class="About1"><p>Kuşaktan kuşağa aktardığımız bilgilerimizle, işimizi 40 yıldır en iyi şekilde yapma sorumluluğuna ve ayrıcalığına sahibiz.</p></div>
+  </div>
+  <div class="number">
+      <div class="number1"><i style="font-size:5vw;color: #000000;" class="fa">&#xf095;</i></div>
+      <div class="number1">Talebiniz İçin</div>
+      <div class="number1">+389 72 226 866</div>
+      <a href="tel:+38972226866" class="callbutton1 button">Hemen Ara!</a>
+  </div>
+</div>
+
+<div class="end">
+  <div class="firstrow">
+      <div class="logo"><img src="images/logo no backround.png" alt=""></div>
+      <div>Kuzey Makedonya, Üsküp <br> Konum Üsküp</div>
+      <div>+389 72 226 866</div>
+      <div><span class="span1"><a href=""><www class="oraselnmk com"></www></a></span></div>
+  </div>
+  <div class="secondrow">
+      <h2>Hızlı Menü</h2>
+      <a href="">Ana Sayfa</a>
+      <a href="">Hakkında</a>
+      <a href="">Ürünler</a>
+      <a href="">Markalar</a>
+      <a href="">Kataloglar</a>
+      <a href="">İletişim</a>
+  </div>
+  <div class="thirdrow">
+      <h2>Ürünler</h2>
+      <a href="">Güç Aletleri</a>
+      <a href="">Yapı Kimyasalları ve Endüstriyel Yapıştırıcılar</a>
+      <a href="">Hortum ve Kelepçeler</a>
+      <a href="">İş Güvenliği Ürünleri</a>
+      <a href="">Aşındırıcılar ve Zımparalar</a>
+      <a href="">Kaynak Ekipmanları</a>
+
+  </div>
+  <div class="fourthrow">
+      <h2>Markalar</h2>
+      <a href="">V10 Güvenlik</a>
+      <a href="">DeWalt</a>
+      <a href="">Beybi</a>
+      <a href="">Karbosan</a>
+      <a href="">Loctite</a>
+      <a href="">Tesa</a>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-white shadow-lg p-4 text-center">
+  <p class="text-gray-600">© Telif Hakkı 2023 ORASEL HIDRAVAT ENDÜSTRİYEL ÜRÜNLER SANAYİ. Tasarım STATUCW</p>
+</footer>
+<!-- Modal -->
+<div class="modal hidden fixed z-50 left-0 top-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto" style="background-color: rgba(0,0,0,0.5);">
+  <div class="modal-content container mx-auto p-4 max-w-xl mt-10 relative">
+      <span class="modal-close absolute top-0 right-0 cursor-pointer px-4 py-2 text-white bg-red-500 hover:bg-red-700 rounded">Kapat</span>
+      <!-- Modal body -->
+      <div class="bg-white rounded px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Ürün Detayları</h3>
+          <div class="mt-2">
+              <p class="text-sm text-gray-500">
+                  Ürün veya hizmet hakkında detaylar buraya dinamik olarak yüklenebilir.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script>
+  //open page animation
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.querySelector('.door-container').style.display = 'none';
+      document.body.classList.add('animated'); // This class removes 'overflow: hidden' from body
+    }, 2000); // This should match the total duration of the animation and any delays
+  });
+
+
+  //
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides1");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000)}; // Change image every 3 seconds
+  //Carousel
+  let currentIndex = 0;
+
+  function nextSlide() {
+    const images = document.querySelectorAll('.sponsor-image');
+    const totalImages = images.length;
+
+    images.forEach(img => img.style.display = 'none'); // Hide all images
+
+    currentIndex++;
+    if (currentIndex > totalImages) {
+      currentIndex = 1; // Loop back to the first image
+    }
+
+    images[currentIndex - 1].style.display = 'block'; // Show the current image
+  }
+
+  // Initialize the slideshow to automatically move to the next slide every 2 seconds
+  setInterval(nextSlide, 2000);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.sponsor-image')[0].style.display = 'block'; // Show the first image initially
+    nextSlide(); // Start the slideshow
+  });
+
+  //for hamburger menu
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+
+
+  //for number count
+  document.addEventListener('DOMContentLoaded', () => {
+    const numberElements = document.querySelectorAll('.count');
+
+    numberElements.forEach((numberElement) => {
+      const targetValue = parseInt(numberElement.getAttribute('data-target'), 10);
+      let currentValue = 0;
+
+      const increment = targetValue / 100; // Adjust the division value to control the speed
+
+      const updateNumber = () => {
+        currentValue += increment;
+
+        if (currentValue > targetValue) {
+          numberElement.innerText = `${targetValue}+`; // Append a plus sign here
+        } else {
+          numberElement.innerText = Math.floor(currentValue);
+          requestAnimationFrame(updateNumber);
+        }
+      };
+
+      updateNumber();
+    });
+  });
+
+
+
+  // Mobile Menu Toggle
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const menu = document.querySelector('.md:hidden');
+
+    menuButton.addEventListener('click', function () {
+      menu.classList.toggle('hidden');
+    });
+  });
+  // Modal Functionality
+  document.addEventListener('DOMContentLoaded', function () {
+    const modalOpenButton = document.querySelector('.modal-open');
+    const modalCloseButton = document.querySelector('.modal-close');
+    const modal = document.querySelector('.modal');
+
+    // Open modal
+    modalOpenButton.addEventListener('click', function () {
+      modal.classList.remove('hidden');
+    });
+
+    // Close modal
+    modalCloseButton.addEventListener('click', function () {
+      modal.classList.add('hidden');
+    });
+
+    // Close modal on outside click
+    window.addEventListener('click', function (e) {
+      if (e.target == modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  });
+</script>
+</body>
+</html>
+</body>
+</html>

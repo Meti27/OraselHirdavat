@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        .about-card{
+            height: 40vh;
+        }
+        .about-cards-container{
+            padding-bottom: 10vh;
+        }
+        @media (max-width: 1000px){
+            .about-card{
+                height: auto !important;
+            }
+        }
+    </style>
+
+</head>
+<body class="font-sans">
+<div class="door-container">
+    <div class="door door-left"></div>
+    <div class="door door-right"></div>
+</div>
+<!-- Navigation Bar -->
+<div id="desk-nav-1"class="md:hidden flex items-center">
+    <button class="mobile-menu-button">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+</div>
+<nav id="desk-nav" class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7">
+                <div>
+                    <!-- Website Logo -->
+                    <div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+                        <!-- Navbar content here -->
+                        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+                            <img src="images/logo%20no%20backround.png" style="height: 8vh; width: 10vw">
+                            <!--  <a class="title font-bold text-xl text-gray-800" href="#">Orasel Hirdavat</a> -->
+
+                            <div class="nav flex items-center space-x-4">
+                                <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/">Anasayfa</a>
+                                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/about">Kurumsal</a>
+                                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="https://oraselnmk.com/brands">Markalar</a>
+                                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/products">Ürünler</a>
+                                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/Catalogs">Kataloglar</a>
+                                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/contact">İletişim</a>
+                            </div>
+                            <div class="nav flex items-center space-x-4">
+                                <div class="mobile-menu hidden md:hidden">
+                                    <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Home</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">About</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="#">Brands</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Products</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Catalogs</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Contact</a></div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                                 x-show="!showMenu"
+                                 fill="none"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav id="mob-nav">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+
+    <div class="menu">
+        <a onclick="closeMenu()" class="close-menu">X</a>
+        <a href="https://oraselnmk.com/">Anasayfa</a>
+        <a href="https://oraselnmk.com/about" >Kurumsal</a>
+        <div class="dropdown">
+            <a href="https://oraselnmk.com/brands">Markalar</a>
+            <a href="https://oraselnmk.com/products">Ürünler</a>
+            <a href="https://oraselnmk.com/Catalogs">Kataloglar</a>
+        </div>
+        <a href="https://oraselnmk.com/contact">İletişim</a>
+    </div>
+
+</nav>
+
+
+<div class="about-banner">
+    <h1>Kurumsal</h1>
+    <h2>Anasayfa / Kurumsal</h2>
+    <p>1985 yılından bu yana sanayi sektörüne hizmet vermekte olan firmamız birçok resmi kurumun ve özel sektör imalatçıların çözüm ortağı olmaktadır.</p>
+</div>
+
+<div class="our-company-container">
+    <h2 id="company-about-title">FİRMAMIZ</h2>
+    <h1 id="company-about-subtitle">Hep aynı özenle,
+        kuşaktan kuşağa aktarılan birikim.
+    </h1>
+
+    <div class="our-company-about">
+
+        <div class="years-of-experience">
+                <h1 id="no-years">40</h1>
+                <h2 id="company-about-experience">YILLIK SEKTÖR TECRÜBESİ</h2>
+        </div>
+
+        <div id="company-paragraph">
+             <p>Orasel Hirdavat. 1982 yılından bugüne uzanan sektörel deneyim ile yenilikçi ve modern bakış açısını bir araya getirerek, sektörün en iyilerinden oluşan kadrosu ve geniş ürün yelpazesi ile tüm Türkiye’ye hizmet vermek üzere kurulmuştur.
+                <br>
+                 <br>
+                 Kuşaktan kuşağa aktarılan birikim ile yeniliklere ve ilklere öncülük etme misyonunu benimseyen Votek, son gelişmeleri takip ederek ürün gamını sürekli geliştirmeyi, mükemmel ürün ve hizmet kalitesini yakalamayı hedefler.
+                <br>
+                <br>
+                Bünyesindeki birçok bayilik ve distribütörlükle birlikte, güçlü stok, teknolojik donanım ve uzman kadrosu ile güven yaratır ve işini en iyi yapmanın sorumluluğunu alarak çalışmalarına devam eder.</p>
+         </div>
+    </div>
+
+</div>
+
+<div class="about-cards-container">
+
+    <div class="about-card">
+        <div class="card-content">
+            <img src="images/products.png" alt="">
+            <h1>Ürünlerimiz</h1>
+            <p>Sektörünüze ve profesyonel kullanımıza özel yüksek kaliteye sahip ürünler</p>
+        </div>
+        <button>Şimdi Keşfet &#10138;</button>
+    </div>
+
+
+    <div class="about-card">
+        <img src="images/brands.png" alt="">
+        <h1>Markalarımız</h1>
+        <p>Uluslararası kaliteye sahip, global ölçekte tercih edilen markalarımız</p>
+        <button>Şimdi Keşfet &#10138;</button>
+    </div>
+
+
+    <div class="about-card">
+        <img src="images/catalogs.png" alt="">
+        <h1>Kataloglarımız</h1>
+        <p>Geniş ürün kataloglarımızı isterseniz inceleyebilir ve indirebilirsiniz</p>
+        <button>Şimdi Keşfet &#10138;</button>
+    </div>
+
+</div>
+
+<div class="catalog-banner">
+    <div class="catalog-container">
+        <div class="catalog-left">
+            <div>
+                <h2 id="catalog-title">KATALOGLAR</h2>
+                <h1>Yeni sezon 2024
+                    kataloğumuzu incelediniz mi?</h1>
+                <button id="button-custom" style="margin-left: 30px">&#9432; Daha fazla bilgi</button>
+            </div>
+        </div>
+
+        <div class="catalog-right">
+            <div>
+                <img src="images/katalog-bg%20copy.png" alt="calatog">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="about-success">
+    <h1>Müşterilerimize ayrıcalıklı hizmetler sunma arzusuyla başarıyı hedefliyoruz.</h1>
+    <div class="success-container">
+        <div class="success-left">
+            <div>
+                <h1 class="success-name">&#10003; Zengin Ürün Gamı</h1>
+                <p>10 binden fazla ürün çeşidi ve güçlü stoğuyla profesyonel hizmetler vermekteyiz.</p>
+            </div>
+            <div>
+                <h1 class="success-name">&#10003; Uluslararası Markalar</h1>
+                <p>Dünya standartlarının üzerinde, sektörün profesyonelleri tarafından en çok tercih markaları siz müşterilerimize sunuyoruz.</p>
+            </div>
+            <div>
+                <h1 class="success-name">&#10003; Birebir Hizmet Anlayışı</h1>
+                <p>Uzman kadromuzun profesyonel iş anlayışını, size özel satış öncesi ve sonrası hizmetlerimizle birlikte sunuyoruz.</p>
+            </div>
+        </div>
+        <div class="success-right">
+            <div>
+                <h1 class="success-name">&#10003; Müşteri Odaklılık</h1>
+                <p>Kaliteli ürünü doğru fiyat politikası ile sizinle buluşturmaya aynı kararlılıkla devam ediyoruz.</p>
+            </div>
+            <div>
+                <h1 class="success-name">&#10003; Hızlı Sevkiyat Çözümleri</h1>
+                <p>Bizden aldığınız ürünleri, bünyemizde bulunan sevkiyat araçlarımızla ve diğer kargo şirketleriyle hızlı teslimatını sağlıyoruz.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-btm-banner" style="margin-bottom: 0">
+    <div class="btm-banner-container">
+
+            <div>
+                <h1><span class="num" data-val="20">00</span>+</h1>
+                <p> MARKA</p>
+            </div>
+
+            <div>
+                <h1> <span class="num" data-val="10000">0000</span>+</h1>
+                <p>ÜRÜN</p>
+            </div>
+
+            <div>
+                <h1><span class="num" data-val="40">00</span>+</h1>
+                <p>TECRÜBE</p>
+            </div>
+
+            <div>
+                <h1><span class="num" data-val="2000">0000</span>+</h1>
+                <p>MÜŞTERİ</p>
+            </div>
+
+        </div>
+        <div class="btm-banner-bottom">
+
+        </div>
+
+
+</div>
+
+<script>
+
+    function closeMenu() {
+        // Toggle the menu visibility by clicking the menu toggle checkbox
+        var menuToggle = document.getElementById('menu-toggle');
+        menuToggle.checked = false;
+        console.log("clicked")
+    }
+</script>
+
+<script>
+    function startCountersWhenInView(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+
+                let valueDisplays = document.querySelectorAll('.num');
+                let interval = 1500;
+
+                valueDisplays.forEach((valueDisplay) => {
+                    let startValue = 0;
+
+                    if (valueDisplay.getAttribute("data-val") == 2000) {
+                        startValue = 1700;
+                    }
+                    if (valueDisplay.getAttribute("data-val") == 10000) {
+                        startValue = 9700;
+                    }
+
+                    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                    let duration = Math.floor(interval / endValue);
+                    let counter = setInterval(function() {
+                        startValue += 1;
+                        valueDisplay.textContent = startValue;
+                        if (startValue == endValue) {
+                            clearInterval(counter);
+                        }
+                    }, duration);
+
+                    observer.unobserve(entry.target);
+                });
+            }
+        });
+    }
+
+    const observer = new IntersectionObserver(startCountersWhenInView, {
+        threshold: 0.8
+    });
+
+    const targetElement = document.querySelector('.about-btm-banner');
+
+    if (targetElement) {
+        observer.observe(targetElement);
+    }
+
+</script>
+
+<div class="contactfix" style="margin-top: 0">
+    <div class="Contact">
+        <div class="About"><p><span class="span1">Kuşaktan kuşağa</span> aynı özenle <span class="span1">40 yıldır</span> aktarılan bir bilgi.</p></div>
+        <div class="About1"><p>Kuşaktan kuşağa aktardığımız bilgilerimizle, işimizi 40 yıldır en iyi şekilde yapma sorumluluğuna ve ayrıcalığına sahibiz.</p></div>
+    </div>
+    <div class="number">
+        <div class="number1"><i style="font-size:5vw;color: #000000;" class="fa">&#xf095;</i></div>
+        <div class="number1">Talebiniz İçin</div>
+        <div class="number1">+389 72 226 866</div>
+        <a href="tel:+38972226866" class="callbutton1 button">Hemen Ara!</a>
+    </div>
+</div>
+
+<div class="end">
+    <div class="firstrow">
+        <div class="logo"><img src="images/logo no backround.png" alt=""></div>
+        <div>Kuzey Makedonya, Üsküp <br> Konum Üsküp</div>
+        <div>+389 72 226 866</div>
+        <div><span class="span1"><a href=""><www class="oraselnmk com"></www></a></span></div>
+    </div>
+    <div class="secondrow">
+        <h2>Hızlı Menü</h2>
+        <a href="/tr/index.html">Ana Sayfa</a>
+            <a href="/tr/about.html">Hakkında</a>
+            <a href="/tr/products.html">Ürünler</a>
+            <a href="/tr/brands.html">Markalar</a>
+            <a href="/tr/Catalogs.html">Kataloglar</a>
+            <a href="/tr/contact.html">İletişim</a>
+    </div>
+    <div class="thirdrow">
+        <h2>Ürünler</h2>
+        <a href="">Güç Aletleri</a>
+        <a href="">Yapı Kimyasalları ve Endüstriyel Yapıştırıcılar</a>
+        <a href="">Hortum ve Kelepçeler</a>
+        <a href="">İş Güvenliği Ürünleri</a>
+        <a href="">Aşındırıcılar ve Zımparalar</a>
+        <a href="">Kaynak Ekipmanları</a>
+
+    </div>
+    <div class="fourthrow">
+        <h2>Markalar</h2>
+        <a href="">V10 Güvenlik</a>
+        <a href="">DeWalt</a>
+        <a href="">Beybi</a>
+        <a href="">Karbosan</a>
+        <a href="">Loctite</a>
+        <a href="">Tesa</a>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bg-white shadow-lg p-4 text-center">
+    <p class="text-gray-600">© Telif Hakkı 2023 ORASEL HIDRAVAT ENDÜSTRİYEL ÜRÜNLER SANAYİ. Tasarım STATUCW</p>
+</footer>
+<!-- Modal -->
+<div class="modal hidden fixed z-50 left-0 top-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto" style="background-color: rgba(0,0,0,0.5);">
+    <div class="modal-content container mx-auto p-4 max-w-xl mt-10 relative">
+        <span class="modal-close absolute top-0 right-0 cursor-pointer px-4 py-2 text-white bg-red-500 hover:bg-red-700 rounded">Kapat</span>
+        <!-- Modal body -->
+        <div class="bg-white rounded px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Ürün Detayları</h3>
+            <div class="mt-2">
+                <p class="text-sm text-gray-500">
+                    Ürün veya hizmet hakkında detaylar buraya dinamik olarak yüklenebilir.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    //open page animation
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            document.querySelector('.door-container').style.display = 'none';
+            document.body.classList.add('animated'); // This class removes 'overflow: hidden' from body
+        }, 2000); // This should match the total duration of the animation and any delays
+    });
+
+
+    //
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides1");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000)}; // Change image every 3 seconds
+    //Carousel
+    let currentIndex = 0;
+
+    function nextSlide() {
+        const images = document.querySelectorAll('.sponsor-image');
+        const totalImages = images.length;
+
+        images.forEach(img => img.style.display = 'none'); // Hide all images
+
+        currentIndex++;
+        if (currentIndex > totalImages) {
+            currentIndex = 1; // Loop back to the first image
+        }
+
+        images[currentIndex - 1].style.display = 'block'; // Show the current image
+    }
+
+    // Initialize the slideshow to automatically move to the next slide every 2 seconds
+    setInterval(nextSlide, 2000);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.sponsor-image')[0].style.display = 'block'; // Show the first image initially
+        nextSlide(); // Start the slideshow
+    });
+
+    //for hamburger menu
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+
+
+    //for number count
+    document.addEventListener('DOMContentLoaded', () => {
+        const numberElements = document.querySelectorAll('.count');
+
+        numberElements.forEach((numberElement) => {
+            const targetValue = parseInt(numberElement.getAttribute('data-target'), 10);
+            let currentValue = 0;
+
+            const increment = targetValue / 100; // Adjust the division value to control the speed
+
+            const updateNumber = () => {
+                currentValue += increment;
+
+                if (currentValue > targetValue) {
+                    numberElement.innerText = `${targetValue}+`; // Append a plus sign here
+                } else {
+                    numberElement.innerText = Math.floor(currentValue);
+                    requestAnimationFrame(updateNumber);
+                }
+            };
+
+            updateNumber();
+        });
+    });
+
+
+
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuButton = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.md:hidden');
+
+        menuButton.addEventListener('click', function () {
+            menu.classList.toggle('hidden');
+        });
+    });
+    // Modal Functionality
+    document.addEventListener('DOMContentLoaded', function () {
+        const modalOpenButton = document.querySelector('.modal-open');
+        const modalCloseButton = document.querySelector('.modal-close');
+        const modal = document.querySelector('.modal');
+
+        // Open modal
+        modalOpenButton.addEventListener('click', function () {
+            modal.classList.remove('hidden');
+        });
+
+        // Close modal
+        modalCloseButton.addEventListener('click', function () {
+            modal.classList.add('hidden');
+        });
+
+        // Close modal on outside click
+        window.addEventListener('click', function (e) {
+            if (e.target == modal) {
+                modal.classList.add('hidden');
+            }
+        });
+    });
+</script>
+</body>
+</html>
