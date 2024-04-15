@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="font-sans">
+<div class="door-container">
+  <div class="door door-left"></div>
+  <div class="door door-right"></div>
+  <style>
+    body{
+      color: #696969;
+      font-size: 1.2rem;
+    }
+    .product-paragraph, ul{
+      padding: 30px;
+      color: #696969;
+      font-size: 1.2rem;
+    }
+    .product-paragraph-title{
+      margin-left: auto;
+      margin-right: auto;
+      padding: 30px;
+      color: #696969;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .product-companies{
+      display: flex;
+      width: 10vw;
+      height: auto;
+      margin-top: 3vh;
+      margin-bottom: 3vh;
+    }
+    .product-companies img{
+      
+      width: 100%;
+      height: 100%;
+    }
+    .product-container{
+      padding: 5vh;
+      width: 80vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #button-custom{
+      margin: 5vh;
+    }
+
+    @media (max-width: 1000px){
+      .product-container{
+        width: 100vw;
+      }
+      .product-paragraph{
+        font-size: 3rem;
+      }
+      .product-paragraph-title{
+        font-size: 3rem;
+        width: 100%;
+      }
+      #button-custom{
+        margin-top: 5vh;
+        font-size: 2rem;
+        height: auto;
+        width: auto;
+
+      }
+    }
+  </style>
+</div>
+<!-- Navigation Bar -->
+<div id="desk-nav-1"class="md:hidden flex items-center">
+  <button class="mobile-menu-button">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+  </button>
+</div>
+<nav id="desk-nav" class="bg-white shadow-lg">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between">
+      <div class="flex space-x-7">
+        <div>
+          <!-- Website Logo -->
+          <div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+            <!-- Navbar content here -->
+            <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+              <img src="images/logo%20no%20backround.png" style="height: 8vh; width: 10vw">
+              <!--  <a class="title font-bold text-xl text-gray-800" href="#">Orasel Hirdavat</a> -->
+
+              <div class="nav flex items-center space-x-4">
+                <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/mk/">Почетна</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/mk/about">За нас</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="https://oraselnmk.com/mk/brands">Брендови</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/mk/products">Производи</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/mk/Catalogs">Каталози</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/mk/contact">Контакт</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/mk/index">EN</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/trt/index">TR</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/mk/index">MK</a>
+            </div>
+              <div class="nav flex items-center space-x-4">
+                <div class="mobile-menu hidden md:hidden">
+                  <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Home</a>
+                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">About</a>
+                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="#">Brands</a>
+                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Products</a>
+                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Catalogs</a>
+                  <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Contact</a></div>
+              </div>
+            </nav>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                   x-show="!showMenu"
+                   fill="none"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   stroke-width="2"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor">
+                <path d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="mob-nav">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="burger-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </label>
+
+  <div class="menu">
+    <a onclick="closeMenu()" class="close-menu">X</a>
+    <a href="https://oraselnmk.com/mk/">Почетна</a>
+    <a href="https://oraselnmk.com/mk/about" >За нас</a>
+    <div class="dropdown">
+        <a href="https://oraselnmk.com/mk/brands">Брендови</a>
+        <a href="https://oraselnmk.com/mk/products">Производи</a>
+        <a href="https://oraselnmk.com/mk/Catalogs">Каталози</a>
+    </div>
+    <a href="https://oraselnmk.com/mk/contact">Контакт</a>
+
+    <div style="padding-top: 1vh">
+        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/index">EN</a>
+        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/trt/index">TR</a>
+        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/mk/index">MK</a>
+    </div>
+
+
+  </div>
+
+</nav>
+
+
+
+<div class="contact-banner">
+  <h1>Абразиви</h1>
+  <h2>ПОЧЕТНА / ПРОИЗВОДИ / РАБОТНИ / БЕЗБЕДНОСТ / ПРОИЗВОДИ</h2>
+</div>
+
+<div class="product-container">
+<p class="product-paragraph">
+  Шмиргелот е име дадено на материјалот кој се користи за изгладување на обработените груби површини. Абразивите исто така се користат за чистење на рѓа, стара боја и лак. Шмиргел е материјал кој се состои од абразивни кристализирани честички песок. Обично се користи во индустријата за производство и градежништво. Тоа е процес што обезбедува глаткост на површини од материјали како што се метал, дрво, мермер, малтер. Шмирглањето е последната операција пред апликација на боја и грунд.
+</p>
+  <h1 class="product-paragraph-title">Какви видови на шмиргел постојат?</h1>
+  <p class="product-paragraph">Шмиргелот, кој помага во изгладувањето на грубите површини, се разновидува според различни категории. Видовите на шмиргел се категоризирани на следниот начин:</p>
+  <ol>
+    <li><span class="product-paragraph-title">Видови шмиргел според нивните форми:</span>&nbsp;Равно шмирглање, кружно шмирглање, валкасто шмирглање и овално шмирглање</li>
+    <li><span class="product-paragraph-title">Видови шмиргел според материјалот:</span>Филц шмирглање, влакнесто шмирглање, метално шмирглање, дрвено шмирглање, платнено шмирглање</li>
+    <li><span class="product-paragraph-title">Видови абразиви според употреба:</span>Рачен шмиргел и машински шмиргел</li>
+    <li><span class="product-paragraph-title">Видови шмиргел според дебелина:</span>Грубо шмирглање, многу грубо шмирглање, фино шмирглање, многу фино шмирглање, средно шмирглање</li>
+    <li><span class="product-paragraph-title">Видови шмиргел според областите на употреба:</span>Дрвен шмиргел, бојадисан шмиргел, мебелен шмиргел, стаклен шмиргел, железен шмиргел</li>
+  </ol>
+
+  <h1 class="product-paragraph-title">Што е шмиргел?</h1>
+
+  <p class="product-paragraph">Тоа е главниот материјал кој се поставува на машината за шмирглање и извршува процесот на шмирглање. Производот се произведува од фини честички од природни или синтетички материјали. Честичките се просејуваат со помош на сита и се класифицираат според нивната големина.
+  <br>
+  <p class="product-paragraph">Абразивниот папир и абразивниот камен се два концепти кои често се заменуваат. Иако нивните функции се исти, нивните области на употреба и форми се различни.</p>
+  <h1 class="product-paragraph-title">Што прави емери каменот?</h1>
+  <p class="product-paragraph">Абразивните точила се алатки за сечење изработени од абразивни честички залепени заедно со органски или неоргански врзувачи. Точилото за мелење се користи широко во металната индустрија, од грубење на леани и завари до најпрецизно мелење на фолија. Производот, кој често се користи во металната индустрија, се користи и во стакларската и керамичката индустрија.</p>
+  <h1 class="product-paragraph-title">Што прави шмирглањето?</h1>
+  <p class="product-paragraph">Шмиргелот осигурува дека грубите површини стануваат глатки. Тоа е материјалот кој се користи за заострување на рбовите на материјалот и за правење на матните површини сјајни. Тој обезбедува отстранување на оштетувањата на стаклените површини. Водениот шмиргел обезбедува светлечки финиш во автомобилската индустрија, шмирглање на мермер и метали.</p>
+  <h1 class="product-paragraph-title">Што е бројот на гранулација на шмиргелот?</h1>
+  <p class="product-paragraph">Што е абразивен песок? Бројот на гранулација на шмиргелот укажува на количината на зрна по единечна површина на шмирглата. Поголемиот број на песочни честички во единечната област, понежниот шмиргел, односно поголемата вредност на песокот. Помалиот број на песочни зрна по единечна површина, поголемите ќе бидат гранулите, па затоа шмиргелот ќе биде погруб, односно ниската вредност на песокот.</p>
+  <h1 class="product-paragraph-title">Што значат броевите на шмирглање?</h1>
+  <p class="product-paragraph">Броевите на абразивите укажуваат колку е фин или груб абразивниот грит што обезбедува истрошување на абразивот. Понискиот број на грит на шмиргелот, понежни се резултатите од завршната обработка. Пониските броеви на грит значат погруб папир. На пример, шмиргел со 200 грит е во категоријата за фино шмирглање.</p>
+  <h1 class="product-paragraph-title">Области на употреба на абразиви според нивните броеви</h1>
+  <p class="product-paragraph">Абразиви со различни броеви се користат за различни цели и површини. Областите на употреба на шмирглите се групирани на следниот начин:</p>
+  <br>
+    <h1 class="product-paragraph-title">Шмиргел број 0: </h1>
+  <p class="product-paragraph">Рудник, дрво итн. Тоа е дебел папир на кој се лепи шмиргел во прав, кој се користи за брусење лице на работите, изгладување и полирање.</p>
+    <h1 class="product-paragraph-title">Абразиви со многу низок број на грит (24-36 грит):</h1>
+  <p class="product-paragraph">Се користи во процеси каде што е потребна висока абразивност. На пример, може да се користи за отстранување на боја и лак, што може да биде тешко да се отстрани од површините. Исто така се користи за шмирглање на стари паркети. Тоа е вид на шмиргел со многу висока абразивност.</p>
+    <h1 class="product-paragraph-title">Абразиви со низок број на грит (40-50 грит):</h1>
+  <p class="product-paragraph">Видот на абразив со голем грит се користи за отстранување на не многу дебели завршни обработки од површините и за обликување на дрвото. Нивната абразивност е многу висока.</p>
+    <h1 class="product-paragraph-title">Абразиви со среден број на грит (60-100 грит):</h1>
+  <p class="product-paragraph">Абразивот, кој се користи за елиминирање на грубоста при обликувањето на дрвото, исто така се користи за подготовка на цврстите дрва пред обработка и за обезбедување подобро прилепување на производот што ќе се нанесува. Нивната абразивност е умерена.</p>
+    <h1 class="product-paragraph-title">Абразиви со висок број на грит (120-220 грит):</h1>
+  <p class="product-paragraph">Овој тип на абразив, кој е погоден за употреба како последен чекор во домашни услови, исто така се користи за отстранување на последната грубост на површината и за подготовка на површината за полирање. Нивната абразивност е ниска.</p>
+    <h1 class="product-paragraph-title">Абразиви со многу висок број на грит (240 и повисоки вредности на грит):</h1>
+  <p class="product-paragraph">Абразиви со вредности на грит меѓу 240 и 400 се користат меѓу слоевите во апликациите за боја и лак. Грешките во апликацијата на боја/лак се елиминираат со зголемување на прилепувањето на површината. Вредности на песок од 600 и повеќе се користат за полирање на површини бидејќи имаат многу фини песоци. Нивната абразивност е многу ниска.</p>
+  </ol>
+  <h1 class="product-paragraph-title">Што е блок за шмирглање?</h1>
+  <p class="product-paragraph">За да се примени шмиргелот подобро на површината, дрвото обвиткано околу него е направено во форма на клин. Го прави шмиргелот лесен за употреба. Блоковите за шмирглање се изработени од материјали како што се дрво, метал, пластика, малтер. Блоковите за шмирглање се користат за подобро шмирглање на глатки површини. Долните делови се направени од флексибилни материјали како што се корк и гума. Блокот за шмирглање, кој има различни големини, е меѓу производите кои се претпочитаат во процесот на шмирглање поради леснотијата за употреба.</p>
+  <h1 class="product-paragraph-title">Што е воден шмиргел?</h1>
+  <p class="product-paragraph">Воденото шмирглање е метод на шмирглање во кој вода или слични течности се користат како мазиво. Обезбедува поглатко и помалку абразивно шмирглање. Најчесто се применува како последен чекор во шмирглањето за добивање на сјајни површини. Во зависност од процесот што треба да се изведе на нивото, е можно да се избере меѓу многу видови како што се шмиргел со 800 грит, 2000 грит шмиргел, 3000 грит шмиргел.</p>
+  <h1 class="product-paragraph-title">Каде се користи воден шмиргел?</h1>
+  <p class="product-paragraph">Особено во автомобилската индустрија, овој тип на шмирглање се претпочита за добивање на сјајен финиш при шмирглањето на мермер и метали. Овој тип на шмиргел; помага да се добие рамномерен, гладок и сјаен изглед.</p>
+<div class="product-companies">
+  <img src="brandspdf/6.png" alt="">
+  <img src="brandspdf/5.png" alt="">
+
+</div>
+<button id="button-custom">Превземи каталог на производната група</button>
+
+</div>
+
+
+</div>
+
+<script>
+
+  function closeMenu() {
+    // Toggle the menu visibility by clicking the menu toggle checkbox
+    var menuToggle = document.getElementById('menu-toggle');
+    menuToggle.checked = false;
+    console.log("clicked")
+  }
+</script>
+
+<script>
+  function startCountersWhenInView(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+
+        let valueDisplays = document.querySelectorAll('.num');
+        let interval = 1500;
+
+        valueDisplays.forEach((valueDisplay) => {
+          let startValue = 0;
+
+          if (valueDisplay.getAttribute("data-val") == 2000) {
+            startValue = 1700;
+          }
+          if (valueDisplay.getAttribute("data-val") == 10000) {
+            startValue = 9700;
+          }
+
+          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+          let duration = Math.floor(interval / endValue);
+          let counter = setInterval(function() {
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) {
+              clearInterval(counter);
+            }
+          }, duration);
+
+          observer.unobserve(entry.target);
+        });
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(startCountersWhenInView, {
+    threshold: 0.8
+  });
+
+  const targetElement = document.querySelector('.about-btm-banner');
+
+  if (targetElement) {
+    observer.observe(targetElement);
+  }
+
+</script>
+
+<div class="catalog-banner">
+  <div class="catalog-container">
+    <div class="catalog-left">
+      <div>
+        <h2 id="catalog-title">КАТАЛОЗИ</h2>
+        <h1>Нова сезона 2024. Дали сте го провериле нашиот каталог?</h1>
+        <button id="button-custom" style="margin-left: 30px">&#9432; Повеќе информации</button>
+    </div>    
+    </div>
+
+    <div class="catalog-right">
+      <div>
+        <img src="images/katalog-bg%20copy.png" alt="calatog">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="contactfix" style="margin-top: 0">
+  <div class="Contact">
+      <div class="About"><p>Знаење кое се пренесува од <span class="span1">генерација на генерација</span> со иста грижа веќе <span class="span1">40 години</span>.</p></div>
+      <div class="About1"><p>Со нашето знаење кое се пренесува од генерација на генерација, имаме одговорност и привилегија да ја вршиме нашата работа на најдобар начин веќе 40 години.</p></div>
+  </div>
+  <div class="number">
+      <div class="number1"><i style="font-size:5vw;color: #000000;" class="fa">&#xf095;</i></div>
+      <div class="number1">За Вашето барање</div>
+      <div class="number1">+389 72 226 866</div>
+      <a href="tel:+38972226866" class="callbutton1 button">ПОВИКАЈ СЕГА!</a>
+  </div>
+</div>
+
+<div class="end">
+  <div class="firstrow">
+      <div class="logo"><img src="images/logo no backround.png" alt=""></div>
+      <div>Северна Македонија, Скопје <br> Konum Üsküp</div>
+      <div>+389 72 226 866</div>
+      <div><span class="span1"><a href=""><www class="oraselnmk com"></www></a></span></div>
+  </div>
+  <div class="secondrow">
+      <h2>Брзо Мени</h2>
+      <a href="https://oraselnmk.com/">Почетна</a>
+      <a href="">За нас</a>
+      <a href="https://oraselnmk.com/products">Производи</a>
+      <a href="https://oraselnmk.com/brands">Брендови</a>
+      <a href="https://oraselnmk.com/Catalogs">Каталози</a>
+      <a href="https://oraselnmk.com/contact">Контакт</a>
+  </div>
+  <div class="thirdrow">
+      <h2>Производи</h2>
+      <a href="https://oraselnmk.com/Powertools">Електрични алати</a>
+      <a href="https://oraselnmk.com/chemicals">Градежни хемикалии и индустриски лепила</a>
+      <a href="https://oraselnmk.com/hose">Црева и скоби</a>
+      <a href="https://oraselnmk.com/occupationalsafetyproducts">Производи за заштита на работа</a>
+      <a href="https://oraselnmk.com/abrasives">Абразиви и абразивни материјали</a>
+      <a href="https://oraselnmk.com/wielding">Опрема за заварување</a>
+  </div>
+  <div class="fourthrow">
+      <h2>Брендови</h2>
+      <a href="">V10 Safety</a>
+      <a href="">DeWalt</a>
+      <a href="">Beybi</a>
+      <a href="">Karbosan</a>
+      <a href="">Loctite</a>
+      <a href="">Tesa</a>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-white shadow-lg p-4 text-center">
+  <p class="text-gray-600">© Copyright 2023 ORASEL HIDRAVAT ENDÜSTRİYEL ÜRÜNLER SANAYİ.Design STATUCW</p>
+</footer>
+<!-- Modal -->
+<div class="modal hidden fixed z-50 left-0 top-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto" style="background-color: rgba(0,0,0,0.5);">
+  <div class="modal-content container mx-auto p-4 max-w-xl mt-10 relative">
+      <span class="modal-close absolute top-0 right-0 cursor-pointer px-4 py-2 text-white bg-red-500 hover:bg-red-700 rounded">Затвори</span>
+      <!-- Modal body -->
+      <div class="bg-white rounded px-4 pt-5 pbpb-4">
+          <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Детали за производот</h3>
+          <div class="mt-2">
+          <p class="text-sm text-gray-500">
+          Детали за производот или услугата може динамички да се вчитаат овде.
+          </p>
+          </div>
+          </div>
+          </div>
+          
+          </div>
+<script>
+  //open page animation
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.querySelector('.door-container').style.display = 'none';
+      document.body.classList.add('animated'); // This class removes 'overflow: hidden' from body
+    }, 2000); // This should match the total duration of the animation and any delays
+  });
+
+
+  //
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides1");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000)}; // Change image every 3 seconds
+  //Carousel
+  let currentIndex = 0;
+
+  function nextSlide() {
+    const images = document.querySelectorAll('.sponsor-image');
+    const totalImages = images.length;
+
+    images.forEach(img => img.style.display = 'none'); // Hide all images
+
+    currentIndex++;
+    if (currentIndex > totalImages) {
+      currentIndex = 1; // Loop back to the first image
+    }
+
+    images[currentIndex - 1].style.display = 'block'; // Show the current image
+  }
+
+  // Initialize the slideshow to automatically move to the next slide every 2 seconds
+  setInterval(nextSlide, 2000);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.sponsor-image')[0].style.display = 'block'; // Show the first image initially
+    nextSlide(); // Start the slideshow
+  });
+
+  //for hamburger menu
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+
+
+  //for number count
+  document.addEventListener('DOMContentLoaded', () => {
+    const numberElements = document.querySelectorAll('.count');
+
+    numberElements.forEach((numberElement) => {
+      const targetValue = parseInt(numberElement.getAttribute('data-target'), 10);
+      let currentValue = 0;
+
+      const increment = targetValue / 100; // Adjust the division value to control the speed
+
+      const updateNumber = () => {
+        currentValue += increment;
+
+        if (currentValue > targetValue) {
+          numberElement.innerText = `${targetValue}+`; // Append a plus sign here
+        } else {
+          numberElement.innerText = Math.floor(currentValue);
+          requestAnimationFrame(updateNumber);
+        }
+      };
+
+      updateNumber();
+    });
+  });
+
+
+
+  // Mobile Menu Toggle
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const menu = document.querySelector('.md:hidden');
+
+    menuButton.addEventListener('click', function () {
+      menu.classList.toggle('hidden');
+    });
+  });
+  // Modal Functionality
+  document.addEventListener('DOMContentLoaded', function () {
+    const modalOpenButton = document.querySelector('.modal-open');
+    const modalCloseButton = document.querySelector('.modal-close');
+    const modal = document.querySelector('.modal');
+
+    // Open modal
+    modalOpenButton.addEventListener('click', function () {
+      modal.classList.remove('hidden');
+    });
+
+    // Close modal
+    modalCloseButton.addEventListener('click', function () {
+      modal.classList.add('hidden');
+    });
+
+    // Close modal on outside click
+    window.addEventListener('click', function (e) {
+      if (e.target == modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  });
+</script>
+</body>
+</html>
+</body>
+</html>

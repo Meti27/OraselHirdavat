@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+
+        @media (max-width:1000px){
+            .about-cards-container{
+                height: 150vh;
+            }
+            .about-card button{
+                transform: translateY(0px) !important;
+            }
+            .about-btm-banner-title-small{
+                display: none;
+            }
+            .image1{
+                width: 100vw !important;
+                height: auto !important;
+            }
+            #bg1{
+                background-image: url("images/backround1-mob.jpg");
+            }
+            #bg2{
+                background-image: url("images/backround2-mob.jpg");
+            }
+            .titleforproducts{
+                font-size: 4rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div class="door-container">
+        <div class="door door-left"></div>
+        <div class="door door-right"></div>
+    </div>
+    <style>
+        @media (max-width: 1000px){
+        .door-container{
+            display: none;
+        }
+        }
+    </style>
+    <!-- Navigation Bar -->
+    <div id="desk-nav-1"class="md:hidden flex items-center">
+        <button class="mobile-menu-button">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </div>
+    <nav id="desk-nav" class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+                            <!-- Navbar content here -->
+                            <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+                                <img src="images/logo%20no%20backround.png" style="height: 8vh; width: 10vw">
+                                <!--  <a class="title font-bold text-xl text-gray-800" href="#">Orasel Hirdavat</a> -->
+
+                                <div class="nav flex items-center space-x-4">
+                                    <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/">Почетна</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/about">За нас</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="https://oraselnmk.com/brands">Брендови</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/products">Производи</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/Catalogs">Каталози</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/contact">Контакт</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/index">EN</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/trt/index">TR</a>
+                                    <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/mk/index">MK</a>
+                                </div>
+                                <div class="nav flex items-center space-x-4">
+                                    <div class="mobile-menu hidden md:hidden">
+                                        <a class=" block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Home</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">About</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-600" href="#">Brands</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Products</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Catalogs</a>
+                                        <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="#">Contact</a></div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Mobile menu button -->
+                        <div class="md:hidden flex items-center">
+                            <button class="outline-none mobile-menu-button">
+                                <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                                     x-show="!showMenu"
+                                     fill="none"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round"
+                                     stroke-width="2"
+                                     viewBox="0 0 24 24"
+                                     stroke="currentColor">
+                                    <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="mob-nav">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+
+        <div class="menu">
+            <a onclick="closeMenu()" class="close-menu">X</a>
+            <a href="https://oraselnmk.com/">Почетна</a>
+            <a href="https://oraselnmk.com/about" >За нас</a>
+            <div class="dropdown">
+                <a href="https://oraselnmk.com/brands">Брендови</a>
+                <a href="https://oraselnmk.com/products">Производи</a>
+                <a href="https://oraselnmk.com/Catalogs">Каталози</a>
+            </div>
+            <a href="https://oraselnmk.com/contact">Контакт</a>
+        
+            <div style="padding-top: 1vh">
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/index">EN</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/trt/index">TR</a>
+                <a class="block py-2 px-4 text-sm hover:bg-gray-200 text-gray-800 hover:text-gray-700" href="https://oraselnmk.com/mk/index">MK</a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="backroundimg">
+        <div class="slideshow-container1">
+            <div class="mySlides1 fade" style="height: 100vh">
+                <div class="image1"><img src="images/background0-home.jpg" id="bg0"></div>
+               </div>
+            <div class="mySlides1 fade"  style="height: 100vh">
+              <img src="images/backround1.2.jpg" id="bg1">
+              
+            </div>
+          
+            <div class="mySlides1 fade"  style="height: 100vh">
+                <img src="images/backround3.2.jpg" id="bg2">
+              
+            </div>
+          </div>
+      
+    </div>
+    <div class="slideshow-container relative mx-auto max-w-6xl overflow-hidden bg-white rounded-lg" style="padding: 5vh">
+      <div class="slide flex">
+          <img src="images/ansel.png" class="sponsor-image" id="1">
+          <img src="images/Bally.png" class="sponsor-image" id="2">
+          <img src="images/Dewalt.png" class="sponsor-image" id="3">
+          <img src="images/Fisco.jpg" class="sponsor-image" id="4">
+          <img src="images/karbosan.png" class="sponsor-image" id="5">
+          <img src="images/Loctite.png" class="sponsor-image" id="6">
+      </div>
+      <div class="slide flex">
+          
+      </div>
+      <!-- Add more slides as needed -->
+  </div>
+  <section class="product-backround">
+    <h3 class=" h3product">НАШИТЕ ПРОИЗВОДИ</h3>
+    <h1 class=" titleforproducts"><span class="span1">Висок квалитет</span> производи специфични за вашите <br> индустрија и професионална употреба</h1>
+    <!-- Products/Services Showcase -->
+
+      <div class="about-cards-container" style="background-color: white ">
+
+          <div class="about-card">
+              <div class="card-content">
+                  <img src="images/power%20tool-blue.png" alt="">
+                  <h1 style="font-size: 1.3rem">Електрични алатки</h1>
+                  <p>Ве молиме кликнете за да добиете информации и прегледајте ги нашите производи за електрични алати.</p>
+              </div>
+              <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(20px); border: 3px solid #3498db; font-size: 0.9rem" onclick=" let url = 'https://www.oraselnmk.com/mk/Powertools'; window.location.href = url;">See More &#10138;</button>
+          </div>
+
+
+          <div class="about-card">
+              <img src="images/chemicals-blue.png" alt="">
+              <h1 style="font-size: 1.3rem">Хемикалии и индустриски лепила</h1>
+              <p>Ве молиме кликнете за да добиете информации за нашите хемиски производи што се користат во зградите.</p>
+              <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(0px); border: 3px solid #3498db; font-size: 0.9rem" onclick=" let url = 'https://www.oraselnmk.com/mk/chemicals'; window.location.href = url;">See More &#10138;</button>
+          </div>
+
+
+          <div class="about-card">
+              <img src="images/hose%20and%20clamps-blue.png" alt="">
+              <h1 style="font-size: 1.3rem">Црево и стеги</h1>
+              <p>Ве молиме кликнете за да добиете информации и прегледајте го нашиот широк асортиман на производи за црева.</p>
+              <button style="border-radius: 180px; width: 10vh; height: 10vh; transform: translateY(0px); border: 3px solid #3498db; font-size: 0.9rem" onclick=" let url = 'https://www.oraselnmk.com/mk/hose'; window.location.href = url;">See More &#10138;</button>
+          </div>
+
+      </div>
+  </div>
+  <h3 class="h3product span1 text-center font-bold text-2xl"><a href="">СИТЕ НАШИ ГРУПИ НА ПРОИЗВОДИ</a></h3>
+</section>
+<div class="home-banner">
+<img src="images/homepage-banner-btm.png" alt=""></div>
+<hr>
+<div class="experiences">
+<div class="our-experiences">
+<div class="institutional">
+  <h1 id="office-title">ИНСТИТУЦИОНАЛНИ</h1>
+  <h2><span class="span1 ">40 години</span> искуство во индустријата</h2>
+  <p>ORASEL HIRDAVAT Inc. Денес, во рамките на семејната топлина и искреност, со секаква модерна и технолошка опрема, искусни и иновативни менаџери, високо упатени и искусни продажни претставници и искусен персонал; Обезбедува продажни и постпродажни услуги низ целата земја со повеќе од десет илјади типови производи.</p>
+  <div class="flex mt-4" style="justify-content: flex-start">
+    <button id="button-custom" onclick=" let url = 'https://www.oraselnmk.com/mk/about'; window.location.href = url;">Повеќе информации</button>
+</div>
+</div>
+</div>
+<div class="our">
+    <div class="institutional1">
+        <h1>01</h1> <hr><span>&#8594;</span>
+        <div class="text"><h4><a href="#"><span class="span1">Богата палета на производи</span></a></h4></div>
+        
+    </div>
+    <div class="institutional1">
+        <h1>02</h1> <hr><span>&#8594;</span>
+        <div class="text"><h4><a href="#"><span class="span1">Меѓународен опсег</span></a></h4></div>
+        
+    </div>
+    <div class="institutional1">
+        <h1>03</h1> <hr><span>&#8594;</span>
+        <div class="text"><h4><a href="#"><span class="span1">Концепт на услуга еден-на-еден</span></a></h4></div>
+        
+    </div>
+</div>
+</div>
+    <div class="about-btm-banner" style="margin-bottom: 0">
+        <div class="btm-banner-container">
+
+            <div>
+                <h2 class="about-btm-banner-title-small">Глобално</h2>
+                <h1><span class="num" data-val="20">00</span>+</h1>
+                <p>БРЕНД</p>
+            </div>
+
+            <div>
+                <h2 class="about-btm-banner-title-small">Специфично за вашата индустрија</h2>
+                <h1> <span class="num" data-val="10000">0000</span>+</h1>
+                <p>ПРОИЗВОД</p>
+            </div>
+
+            <div>
+                <h2 class="about-btm-banner-title-small">Во индустријата</h2>
+                <h1><span class="num" data-val="40">00</span>+</h1>
+                <p>ИСКУСТВО</p>
+            </div>
+
+            <div>
+                <h2 class="about-btm-banner-title-small">Се испорачува</h2>
+                <h1><span class="num" data-val="2000">0000</span>+</h1>
+                <p>КЛИЕНТ</p>
+            </div>
+
+        </div>
+        <div class="btm-banner-bottom">
+
+        </div>
+
+
+    </div>
+    <div class="contactfix" style="margin-top: 0">
+        <div class="Contact">
+            <div class="About"><p>Знаење кое се пренесува од <span class="span1">генерација на генерација</span> со иста грижа веќе <span class="span1">40 години</span>.</p></div>
+            <div class="About1"><p>Со нашето знаење кое се пренесува од генерација на генерација, имаме одговорност и привилегија да ја вршиме нашата работа на најдобар начин веќе 40 години.</p></div>
+        </div>
+        <div class="number">
+            <div class="number1"><i style="font-size:5vw;color: #000000;" class="fa">&#xf095;</i></div>
+            <div class="number1">За Вашето барање</div>
+            <div class="number1">+389 72 226 866</div>
+            <a href="tel:+38972226866" class="callbutton1 button">ПОВИКАЈ СЕГА!</a>
+        </div>
+    </div>
+    
+    <div class="end">
+        <div class="firstrow">
+            <div class="logo"><img src="images/logo no backround.png" alt=""></div>
+            <div>Северна Македонија, Скопје <br> Konum Üsküp</div>
+            <div>+389 72 226 866</div>
+            <div><span class="span1"><a href=""><www class="oraselnmk com"></www></a></span></div>
+        </div>
+        <div class="secondrow">
+            <h2>Брзо Мени</h2>
+            <a href="https://oraselnmk.com/">Почетна</a>
+            <a href="">За нас</a>
+            <a href="https://oraselnmk.com/products">Производи</a>
+            <a href="https://oraselnmk.com/brands">Брендови</a>
+            <a href="https://oraselnmk.com/Catalogs">Каталози</a>
+            <a href="https://oraselnmk.com/contact">Контакт</a>
+        </div>
+        <div class="thirdrow">
+            <h2>Производи</h2>
+            <a href="https://oraselnmk.com/Powertools">Електрични алати</a>
+            <a href="https://oraselnmk.com/chemicals">Градежни хемикалии и индустриски лепила</a>
+            <a href="https://oraselnmk.com/hose">Црева и скоби</a>
+            <a href="https://oraselnmk.com/occupationalsafetyproducts">Производи за заштита на работа</a>
+            <a href="https://oraselnmk.com/abrasives">Абразиви и абразивни материјали</a>
+            <a href="https://oraselnmk.com/wielding">Опрема за заварување</a>
+        </div>
+        <div class="fourthrow">
+            <h2>Брендови</h2>
+            <a href="">V10 Safety</a>
+            <a href="">DeWalt</a>
+            <a href="">Beybi</a>
+            <a href="">Karbosan</a>
+            <a href="">Loctite</a>
+            <a href="">Tesa</a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-white shadow-lg p-4 text-center">
+        <p class="text-gray-600">© Copyright 2023 ORASEL HIDRAVAT ENDÜSTRİYEL ÜRÜNLER SANAYİ.Design STATUCW</p>
+    </footer>
+    <!-- Modal -->
+    <div class="modal hidden fixed z-50 left-0 top-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-content container mx-auto p-4 max-w-xl mt-10 relative">
+            <span class="modal-close absolute top-0 right-0 cursor-pointer px-4 py-2 text-white bg-red-500 hover:bg-red-700 rounded">Затвори</span>
+            <!-- Modal body -->
+            <div class="bg-white rounded px-4 pt-5 pbpb-4">
+                <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Детали за производот</h3>
+                <div class="mt-2">
+                <p class="text-sm text-gray-500">
+                Детали за производот или услугата може динамички да се вчитаат овде.
+                </p>
+             </div>
+         </div>
+     </div>
+                
+</div>
+
+
+
+    <script>
+        function startCountersWhenInView(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+
+                    let valueDisplays = document.querySelectorAll('.num');
+                    let interval = 1500;
+
+                    valueDisplays.forEach((valueDisplay) => {
+                        let startValue = 0;
+
+                        if (valueDisplay.getAttribute("data-val") == 2000) {
+                            startValue = 1700;
+                        }
+                        if (valueDisplay.getAttribute("data-val") == 10000) {
+                            startValue = 9700;
+                        }
+
+                        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                        let duration = Math.floor(interval / endValue);
+                        let counter = setInterval(function() {
+                            startValue += 1;
+                            valueDisplay.textContent = startValue;
+                            if (startValue == endValue) {
+                                clearInterval(counter);
+                            }
+                        }, duration);
+
+                        observer.unobserve(entry.target);
+                    });
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(startCountersWhenInView, {
+            threshold: 0.8
+        });
+
+        const targetElement = document.querySelector('.about-btm-banner');
+
+        if (targetElement) {
+            observer.observe(targetElement);
+        }
+
+    </script>
+
+    <script>
+
+        function closeMenu() {
+            // Toggle the menu visibility by clicking the menu toggle checkbox
+            var menuToggle = document.getElementById('menu-toggle');
+            menuToggle.checked = false;
+            console.log("clicked")
+        }
+    </script>
+
+
+    <script>
+//open page animation 
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.querySelector('.door-container').style.display = 'none';
+        document.body.classList.add('animated'); // This class removes 'overflow: hidden' from body
+    }, 2000); // This should match the total duration of the animation and any delays
+});
+
+
+//
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000)}; // Change image every 3 seconds
+//Carousel
+let currentIndex = 0;
+
+function nextSlide() {
+    const images = document.querySelectorAll('.sponsor-image');
+    const totalImages = images.length;
+    
+    images.forEach(img => img.style.display = 'none'); // Hide all images
+    
+    currentIndex++;
+    if (currentIndex > totalImages) {
+        currentIndex = 1; // Loop back to the first image
+    }
+    
+    images[currentIndex - 1].style.display = 'block'; // Show the current image
+}
+
+// Initialize the slideshow to automatically move to the next slide every 2 seconds
+setInterval(nextSlide, 2000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.sponsor-image')[0].style.display = 'block'; // Show the first image initially
+    nextSlide(); // Start the slideshow
+});
+
+//for hamburger menu 
+document.addEventListener('DOMContentLoaded', () => {
+        const menuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+
+
+//for number count 
+document.addEventListener('DOMContentLoaded', () => {
+    const numberElements = document.querySelectorAll('.count');
+
+    numberElements.forEach((numberElement) => {
+        const targetValue = parseInt(numberElement.getAttribute('data-target'), 10);
+        let currentValue = 0;
+
+        const increment = targetValue / 100; // Adjust the division value to control the speed
+
+        const updateNumber = () => {
+            currentValue += increment;
+
+            if (currentValue > targetValue) {
+                numberElement.innerText = `${targetValue}+`; // Append a plus sign here
+            } else {
+                numberElement.innerText = Math.floor(currentValue);
+                requestAnimationFrame(updateNumber);
+            }
+        };
+
+        updateNumber();
+    });
+});
+
+
+
+      // Mobile Menu Toggle
+      document.addEventListener('DOMContentLoaded', function () {
+          const menuButton = document.querySelector('.mobile-menu-button');
+          const menu = document.querySelector('.md:hidden');
+      
+          menuButton.addEventListener('click', function () {
+              menu.classList.toggle('hidden');
+          });
+      });
+      // Modal Functionality
+      document.addEventListener('DOMContentLoaded', function () {
+          const modalOpenButton = document.querySelector('.modal-open');
+          const modalCloseButton = document.querySelector('.modal-close');
+          const modal = document.querySelector('.modal');
+      
+          // Open modal
+          modalOpenButton.addEventListener('click', function () {
+              modal.classList.remove('hidden');
+          });
+      
+          // Close modal
+          modalCloseButton.addEventListener('click', function () {
+              modal.classList.add('hidden');
+          });
+      
+          // Close modal on outside click
+          window.addEventListener('click', function (e) {
+              if (e.target == modal) {
+                  modal.classList.add('hidden');
+              }
+          });
+      });
+      </script>
+      
+</body>
+</html>
