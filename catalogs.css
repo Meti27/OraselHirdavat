@@ -131,27 +131,29 @@ padding-bottom: 2vw;
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 3vw;
+  height: 40vh;
 }
 .firstrow{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-left: -3vw;
 }
 .secondrow{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .thirdrow{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  
 }
 .fourthrow{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   flex-direction: column;
-  justify-content: space-between;
+ justify-content: space-evenly;
 }
 .logo{
   width: 15vw;
