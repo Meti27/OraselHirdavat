@@ -616,6 +616,7 @@ width: 7vw;
   }
   .end{
     flex-direction: column;
+    height: auto;
   }
   .logo{
     width: 40vw;
