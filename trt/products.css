@@ -305,6 +305,7 @@ padding-bottom: 2vw;
   .end{
     flex-direction: column;
     margin-left: 3vw;
+    height: auto;
   }
   .logo{
     width: 40vw;
