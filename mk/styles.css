@@ -519,6 +519,7 @@ width: 7vw;
   display: flex;
   flex-direction: column;
   margin-left: -3vw;
+  justify-content: space-around;
 }
 .secondrow{
   display: flex;
