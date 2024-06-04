@@ -537,6 +537,8 @@ width: 7vw;
   flex-wrap:wrap;
   flex-direction: column;
  justify-content: space-evenly;
+ width: 35vw;
+ padding-left: 5vw;
 }
 .logo{
   width: 15vw;

@@ -302,7 +302,7 @@ width: 7vw;
 .product-box button:hover {
   background-color: #0056b3;
 }
-@media (max-width: 1000px) {
+@media (max-width: 760px) {
   .titleforproducts{
    width:60vw;
    height: 10vh;
@@ -537,6 +537,8 @@ width: 7vw;
   flex-wrap:wrap;
   flex-direction: column;
  justify-content: space-evenly;
+ width: 35vw;
+ padding-left: 5vw;
 }
 .logo{
   width: 15vw;
