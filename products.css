@@ -243,6 +243,10 @@ padding-bottom: 2vw;
  width: 35vw;
  padding-left: 5vw;
 }
+@media (max-width: 1000px) {
+  .fourthrow{
+    padding-left: 0vw;
+  }}
 .logo{
   width: 15vw;
   height: 15vh;
