@@ -85,6 +85,7 @@ a:hover::after {
   position: relative;
   top: 0px;
   left: 0px;
+  padding-top: 8vh;
   object-fit: contain;
 }
 .backroundimg img{
@@ -549,6 +550,7 @@ width: 7vw;
   height: 15vh;
   mix-blend-mode: multiply;
   object-fit: contain;
+  padding-left: 4vw;
 }.logo img{
   width: 100%;
   height: 100%;
@@ -563,6 +565,12 @@ width: 7vw;
   .institutional p,h3,h5{
     margin-left: 5vw;
     text-align: center;
+  }
+  .backroundimg{
+    height: 50vh;
+  }
+  .backroundimg img{
+    height: 40vh;
   }
   .institutional{
     width: 90vw;

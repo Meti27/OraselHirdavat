@@ -85,6 +85,7 @@ a:hover::after {
   position: relative;
   top: 0px;
   left: 0px;
+  padding-top: 8vh;
   object-fit: contain;
 }
 .backroundimg img{
@@ -549,6 +550,7 @@ width: 7vw;
   height: 15vh;
   mix-blend-mode: multiply;
   object-fit: contain;
+  padding-left: 4vw;
 }.logo img{
   width: 100%;
   height: 100%;
@@ -567,6 +569,12 @@ width: 7vw;
   .institutional{
     width: 90vw;
     height: 20vh;
+  }
+  .backroundimg{
+    height: 50vh;
+  }
+  .backroundimg img{
+    height: 40vh;
   }
   .our-experiences, .customer-experiences {
     width: 80%; /* Adjust based on preference */
