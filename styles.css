@@ -675,7 +675,7 @@ img, video {
 }
 
 .contact-banner{
-  width: 100vw;
+  width: 100%;
   text-align: center;
   padding: 12vh;
   background-image: url("images/contact-us-scaled-1.jpg");

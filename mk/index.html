@@ -36,6 +36,17 @@
                 font-size: 4rem !important;
             }
         }
+        .video-container {
+            width: 100%;
+            height: 90vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body class="font-sans">
@@ -140,23 +151,21 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="backroundimg">
-        <div class="slideshow-container1">
-            <div class="mySlides1 fade" style="height: 100vh">
-                <div class="image1"><img src="images/ORASEL HIRDAVAT_LOGO.png" id="bg0"></div>
-               </div>
-          </div>
-      
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="images/01 FINAL Blue.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
-    <div class="slideshow-container relative mx-auto max-w-6xl overflow-hidden bg-white rounded-lg" style="padding: 5vh">
-      <div class="slide flex">
-          <img src="images/ansel.png" class="sponsor-image" id="1">
-          <img src="images/Bally.png" class="sponsor-image" id="2">
-          <img src="images/Dewalt.png" class="sponsor-image" id="3">
-          <img src="images/Fisco.jpg" class="sponsor-image" id="4">
-          <img src="images/karbosan.png" class="sponsor-image" id="5">
-          <img src="images/Loctite.png" class="sponsor-image" id="6">
-      </div>
+    <div class="slideshow-container1 relative mx-auto max-w-6xl overflow-hidden bg-white rounded-lg" style="padding: 5vh;">
+        <div class="slide flex">
+            <img src="images/ansel.png" class="sponsor-image" id="1">
+            <img src="images/Bally.png" class="sponsor-image" id="2">
+            <img src="images/Dewalt.png" class="sponsor-image" id="3">
+            <img src="images/Fisco.jpg" class="sponsor-image" id="4">
+            <img src="images/karbosan.png" class="sponsor-image" id="5">
+            <img src="images/Loctite.png" class="sponsor-image" id="6">
+        </div>
       <div class="slide flex">
           
       </div>
@@ -418,20 +427,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides1");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 3000)}; // Change image every 3 seconds
-//Carousel
 let currentIndex = 0;
 
 function nextSlide() {
